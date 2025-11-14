@@ -25,14 +25,12 @@ export default async function Home() {
                                 VC Scout is a structured course endorsed by leading Venture Capital firms, designed to introduce students to the world of startup investments. Learn the fundamentals of venture capital, deal sourcing, and evaluation directly from industry experts and top investors.  </p>
 
                             <div className="flex gap-4 flex-wrap pt-4">
-                                <a
-                                    href="https://chat.whatsapp.com/FKpfFAEdb001JPVIeDh1J0?mode=wwt"
-                                    target="_blank" // Opens the link in a new tab
-                                    rel="noopener noreferrer" // Security best practice for new tabs
-                                   className="px-6 py-3 bg-[#FF8C00] text-black font-semibold rounded-full hover:bg-[#FFA500] hover:text-black active:scale-95 transition-all shadow-lg hover:shadow-[#FF8C00]/50"
+                                <Link
+                                    href="/course"
+                                    className="px-6 py-3 bg-[#FF8C00] text-black font-semibold rounded-full hover:bg-[#FFA500] hover:text-black active:scale-95 transition-all shadow-lg hover:shadow-[#FF8C00]/50"
                                 >
                                     Join Now
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
