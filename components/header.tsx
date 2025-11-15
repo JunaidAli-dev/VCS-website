@@ -5,43 +5,59 @@ export default async function Header() {
     const session = await auth();
 
     return (
-        <header className="w-full bg-black/80 backdrop-blur-md text-white border-b border-[#FF8C00] z-50">
-            <div className="max-w-6xl mx-auto flex justify-between items-center py-3 px-6">
-                {/* Logo */}
-                <Link href="/" className="text-3xl font-bold text-[#FF8C00] hover:text-[#FFA500] transition-colors">
-                    E-Cell IIT BHU
-                </Link>
+       <header className="w-full bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 backdrop-blur-md text-white border-b border-cyan-400/30 shadow-[0_2px_10px_rgba(0,0,30,0.4)] z-50">
+  <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+    {/* Logo */}
+    <Link
+      href="/"
+      className="text-3xl font-bold bg-gradient-to-r from-blue-300 via-cyan-400 to-yellow-300 bg-clip-text text-transparent hover:from-blue-400 hover:to-cyan-300 transition-all duration-300"
+    >
+      E-Cell IIT BHU
+    </Link>
 
-                {/* Navigation */}
-                <nav className="flex gap-6 text-sm font-medium items-center">
-                    <Link href="/course" className="px-4 py-2 rounded-full bg-zinc-900/70 hover:bg-[#FF8C00] hover:text-black transition-all shadow-sm">
-                        Course
-                    </Link>
+    {/* Navigation */}
+    <nav className="flex gap-6 text-sm font-medium items-center">
+      <Link
+        href="/course"
+        className="px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/50 hover:bg-slate-700/70 hover:border-cyan-400/50 hover:text-cyan-300 transition-all duration-300 shadow-sm hover:shadow-cyan-500/20"
+      >
+        Course
+      </Link>
 
-                    {session && session.user && (session.user as any).role === "admin" && (
-                        <Link href="/admin" className="px-4 py-2 rounded-full bg-zinc-900/70 hover:bg-[#FF8C00] hover:text-black transition-all shadow-sm">
-                            Admin
-                        </Link>
-                    )}
+      {session && session.user && (session.user as any).role === "admin" && (
+        <Link
+          href="/admin"
+          className="px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/50 hover:bg-slate-700/70 hover:border-cyan-400/50 hover:text-cyan-300 transition-all duration-300 shadow-sm hover:shadow-cyan-500/20"
+        >
+          Admin
+        </Link>
+      )}
 
-                    {session && session.user ? (
-                        <form
-                            action={async () => {
-                                "use server";
-                                await signOut();
-                            }}
-                        >
-                            <button type="submit" className="px-4 py-2 rounded-full bg-[#FF8C00] text-black font-semibold hover:bg-[#FFA500] transition-all shadow-sm">
-                                Sign Out
-                            </button>
-                        </form>
-                    ) : (
-                        <Link href="/auth" className="px-4 py-2 rounded-full bg-[#FF8C00] text-black font-semibold hover:bg-[#FFA500] transition-all shadow-sm">
-                            Register
-                        </Link>
-                    )}
-                </nav>
-            </div>
-        </header>
+      {session && session.user ? (
+        <form
+          action={async () => {
+            "use server";
+            await signOut();
+          }}
+        >
+          <button
+            type="submit"
+            className="px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 hover:scale-[1.03] active:scale-[0.97]"
+          >
+            Sign Out
+          </button>
+        </form>
+      ) : (
+        <Link
+          href="/auth"
+          className="px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 hover:scale-[1.03] active:scale-[0.97]"
+        >
+          Register
+        </Link>
+      )}
+    </nav>
+  </div>
+</header>
+
     );
 }
