@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation"; // Add this import
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function RegisterFormPage() {
   const [formData, setFormData] = useState({
@@ -140,7 +141,7 @@ export default function RegisterFormPage() {
           </div>
         ) : (
           <>
-            <h1 className="text-2xl font-bold mb-6 text-center">
+            <h1 className="text-3xl text-cyan-200 font-bold mb-6 text-center pb-2">
               Course Registration
             </h1>
 
@@ -159,6 +160,7 @@ export default function RegisterFormPage() {
                   type="text"
                   name="full_name"
                   required
+                  placeholder="Enter your full name"
                   value={formData.full_name}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-border rounded bg-background"
@@ -173,6 +175,7 @@ export default function RegisterFormPage() {
                   type="text"
                   name="institution"
                   required
+                  placeholder="Enter your institute"
                   value={formData.institution}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-border rounded bg-background"
@@ -246,21 +249,45 @@ export default function RegisterFormPage() {
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-border rounded bg-background"
                 >
-                  <option value="" disabled hidden>Select Course</option>
-                  <option className="text-black" value="B.Tech">B.Tech</option>
-                  <option className="text-black" value="M.Tech">M.Tech</option>
-                  <option className="text-black" value="MBA">MBA</option>
-                  <option className="text-black" value="B.S.">B.S. (Bachelor of Science)</option>
-                  <option className="text-black" value="B.Sc">B.Sc</option>
-                  <option className="text-black" value="M.Sc">M.Sc</option>
-                  <option className="text-black" value="Dual Degree (B.Tech + M.Tech)">
+                  <option value="" disabled hidden>
+                    Select Course
+                  </option>
+                  <option className="text-black" value="B.Tech">
+                    B.Tech
+                  </option>
+                  <option className="text-black" value="M.Tech">
+                    M.Tech
+                  </option>
+                  <option className="text-black" value="MBA">
+                    MBA
+                  </option>
+                  <option className="text-black" value="B.S.">
+                    B.S. (Bachelor of Science)
+                  </option>
+                  <option className="text-black" value="B.Sc">
+                    B.Sc
+                  </option>
+                  <option className="text-black" value="M.Sc">
+                    M.Sc
+                  </option>
+                  <option
+                    className="text-black"
+                    value="Dual Degree (B.Tech + M.Tech)"
+                  >
                     Dual Degree (B.Tech + M.Tech)
                   </option>
-                  <option className="text-black" value="Integrated (B.Sc + M.Sc)">
+                  <option
+                    className="text-black"
+                    value="Integrated (B.Sc + M.Sc)"
+                  >
                     Integrated (B.Sc + M.Sc)
-                  </option> 
-                  <option className="text-black" value="Ph.D">Ph.D</option>
-                  <option className="text-black" value="Other">Other</option>
+                  </option>
+                  <option className="text-black" value="Ph.D">
+                    Ph.D
+                  </option>
+                  <option className="text-black" value="Other">
+                    Other
+                  </option>
                 </select>
               </div>
 
@@ -292,8 +319,13 @@ export default function RegisterFormPage() {
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-border rounded bg-background"
                 >
-                  <option value="" disabled hidden>Select Branch</option>
-                  <option className="text-black" value="Computer Science & Engineering">
+                  <option value="" disabled hidden>
+                    Select Branch
+                  </option>
+                  <option
+                    className="text-black"
+                    value="Computer Science & Engineering"
+                  >
                     Computer Science & Engineering
                   </option>
                   <option className="text-black" value="Electrical Engineering">
@@ -305,29 +337,57 @@ export default function RegisterFormPage() {
                   <option className="text-black" value="Chemical Engineering">
                     Chemical Engineering
                   </option>
-                  <option className="text-black" value="Civil Engineering">Civil Engineering</option>
+                  <option className="text-black" value="Civil Engineering">
+                    Civil Engineering
+                  </option>
                   <option className="text-black" value="Aerospace Engineering">
                     Aerospace Engineering
                   </option>
-                  <option className="text-black" value="Metallurgical & Materials Engineering">
+                  <option
+                    className="text-black"
+                    value="Metallurgical & Materials Engineering"
+                  >
                     Metallurgical & Materials Engineering
                   </option>
-                  <option className="text-black" value="Biotechnology">Biotechnology</option>
+                  <option className="text-black" value="Biotechnology">
+                    Biotechnology
+                  </option>
                   <option className="text-black" value="Engineering Physics">
                     Engineering Physics
                   </option>
-                  <option className="text-black" value="Mathematics & Computing">
+                  <option
+                    className="text-black"
+                    value="Mathematics & Computing"
+                  >
                     Mathematics & Computing
                   </option>
-                  <option className="text-black" value="Finance">Finance</option>
-                  <option className="text-black" value="Marketing">Marketing</option>
-                  <option className="text-black" value="Operations">Operations</option>
-                  <option className="text-black" value="Human Resources">Human Resources</option>
-                  <option className="text-black" value="Analytics">Analytics</option>
-                  <option className="text-black" value="Physics">Physics</option>
-                  <option className="text-black" value="Chemistry">Chemistry</option>
-                  <option className="text-black" value="Mathematics">Mathematics</option>
-                  <option className="text-black" value="Other">Other</option>
+                  <option className="text-black" value="Finance">
+                    Finance
+                  </option>
+                  <option className="text-black" value="Marketing">
+                    Marketing
+                  </option>
+                  <option className="text-black" value="Operations">
+                    Operations
+                  </option>
+                  <option className="text-black" value="Human Resources">
+                    Human Resources
+                  </option>
+                  <option className="text-black" value="Analytics">
+                    Analytics
+                  </option>
+                  <option className="text-black" value="Physics">
+                    Physics
+                  </option>
+                  <option className="text-black" value="Chemistry">
+                    Chemistry
+                  </option>
+                  <option className="text-black" value="Mathematics">
+                    Mathematics
+                  </option>
+                  <option className="text-black" value="Other">
+                    Other
+                  </option>
                 </select>
               </div>
 
@@ -366,13 +426,17 @@ export default function RegisterFormPage() {
                 />
               </div>
 
-              <Button
-                type="submit"
-                disabled={submitting}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white"
-              >
-                {submitting ? "Registering..." : "Complete Registration"}
-              </Button>
+              <div className="flex justify-center w-full pt-3">
+                <Button
+                  type="submit"
+                  disabled={submitting}
+                  variant="default"
+                  size="lg"
+                  className="w-full max-w-sm"
+                >
+                  {submitting ? "Registering..." : "Complete Registration"}
+                </Button>
+              </div>
             </form>
           </>
         )}
