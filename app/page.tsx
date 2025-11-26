@@ -86,7 +86,7 @@ export default async function Home() {
 
                 {/* Outline style button */}
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/courses">Explore Courses</Link>
+                  <Link href="/course">Explore Courses</Link>
                 </Button>
               </div>
             </div>
