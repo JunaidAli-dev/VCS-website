@@ -8,6 +8,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const courses = [
   {
@@ -30,6 +31,21 @@ const courses = [
   },
 ];
 
+const partners = [
+  {
+    id: 1,
+    name: "247 VC",
+    logo: "247vclogo.png", 
+   
+  },
+  {
+    id: 2,
+    name: "BVC",
+    logo: "BVClogo.png", 
+    
+  },
+];
+
 export default async function Home() {
   return (
     <div className="w-full bg-transparent">
@@ -40,7 +56,6 @@ export default async function Home() {
       >
         {/* Overlay with Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
-
 
         <div className="relative max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10 space-y-8">
           {/* Main Hero Content */}
@@ -71,7 +86,7 @@ export default async function Home() {
 
                 {/* Outline style button */}
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/courses">Explore Courses</Link>
+                  <Link href="/course">Explore Courses</Link>
                 </Button>
               </div>
             </div>
@@ -82,7 +97,7 @@ export default async function Home() {
                   Why E-Cell IIT BHU?
                 </CardTitle>
               </CardHeader>
-              
+
               <CardContent className="p-0">
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start gap-3">
@@ -104,8 +119,6 @@ export default async function Home() {
         </div>
       </section>
 
-    
-
       <section className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 pb-40 md:pb-40">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-cyan-200 via-blue-200 to-blue-100 bg-clip-text text-transparent border-b-2 border-blue-500/50 pb-4 inline-block">
           Popular Courses
@@ -117,11 +130,11 @@ export default async function Home() {
               key={c.id}
               className="bg-zinc-900/80 backdrop-blur-md p-6 md:p-8 hover:border-blue-400/50 transition-all duration-300 group"
             >
-             <CardHeader className="p-0 mb-3">
-  <CardTitle className="uppercase text-lg font-bold tracking-wider">
-    {c.title}
-  </CardTitle>
-</CardHeader>
+              <CardHeader className="p-0 mb-3">
+                <CardTitle className="uppercase text-lg font-bold tracking-wider">
+                  {c.title}
+                </CardTitle>
+              </CardHeader>
               <CardDescription className="mb-4 text-sm">
                 {c.short}
               </CardDescription>
@@ -139,7 +152,42 @@ export default async function Home() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+      </section>
 
+      <section className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 pb-40 md:pb-40">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-cyan-200 via-blue-200 to-blue-100 bg-clip-text text-transparent border-b-2 border-blue-500/50 pb-4 inline-block">
+          Our Partners
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-8">
+          {partners.map((partner) => (
+            <Card
+              key={partner.id}
+              className="bg-zinc-900/80 backdrop-blur-md p-6 md:p-7 hover:border-blue-400/50 transition-all duration-300 group hover:shadow-lg hover:shadow-blue-500/20"
+            >
+              <CardContent className="p-0 flex flex-col items-center text-center space-y-4">
+                {/* Logo Container with Glassmorphism Effect */}
+                <div className="w-full h-32 flex items-center justify-center bg-white rounded-lg border border-zinc-700/50 group-hover:border-blue-400/30 transition-all duration-300 backdrop-blur-sm">
+                  <Image
+                    src={`/${partner.logo}`}
+                    alt={`${partner.name} logo`}
+                    width={200}
+                    height={80}
+                    className="object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
+                  />
+                </div>
+
+                {/* Partner Name */}
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 via-cyan-400 to-yellow-300 bg-clip-text text-transparent group-hover:text-cyan-300 transition-all duration-300
+">
+                  {partner.name}
+                </h3>
+
+              
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </section>
     </div>

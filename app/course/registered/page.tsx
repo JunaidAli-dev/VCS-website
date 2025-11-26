@@ -52,98 +52,108 @@ export default async function Page() {
         );
     };
 
-    return (
-        <div className="p-4 md:p-8 max-w-5xl mx-auto">
-            <div className="mb-8">
-                <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-200 to-blue-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-                    Course Modules
-                </h1>
-                <p className="text-white-600 dark:text-gray-400">
-                    Track your progress and access course materials
-                </p>
-            </div>
 
-            <div className="grid gap-6">
-                {weeks.map((w: any) => {
-                    const score = scoresMap[w.week];
-                    return (
-                        <div 
-                            key={w.week} 
-                            className="group relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-2xl hover:shadow-blue-500/10 dark:hover:shadow-blue-500/20 transition-all duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1 overflow-hidden"
-                        >
-                            {/* Gradient overlay on hover */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500 rounded-2xl"></div>
-                            
-                            {/* Accent border gradient */}
-                            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-sm -z-10"></div>
-
-                            <div className="relative flex items-center justify-between p-6 md:p-7 gap-6">
-                                
-                                {/* Left Side: Module Number Badge + Title & Links */}
-                                <div className="flex items-start gap-4 flex-1 min-w-0">
-                                    {/* Module Number Badge */}
-                                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:shadow-xl group-hover:shadow-blue-500/40 transition-all duration-300 group-hover:scale-110">
-                                        <span className="text-white font-bold text-lg">
-                                            {w.week}
-                                        </span>
-                                    </div>
-
-                                    {/* Title and Links */}
-                                    <div className="flex-1 min-w-0">
-                                        <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                                            {w.title}
-                                        </h2>
-                                        <div className="flex items-center gap-3 flex-wrap">
-                                            {/* Content Link Pill */}
-                                            <a 
-                                                href={w.doc_url} 
-                                                target="_blank" 
-                                                rel="noopener noreferrer" 
-                                                className="group/link inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 hover:from-blue-100 hover:to-blue-200 dark:from-blue-900/50 dark:to-blue-800/50 dark:text-blue-300 dark:hover:from-blue-800/70 dark:hover:to-blue-700/70 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105"
-                                            >
-                                                <span className="text-base">📖</span>
-                                                <span className="hidden sm:inline">View Content</span>
-                                                <span className="sm:hidden">Content</span>
-                                                <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
-
-                                            {/* Submission Link Pill */}
-                                            <a 
-                                                href={w.submission_link} 
-                                                target="_blank" 
-                                                rel="noopener noreferrer" 
-                                                className="group/link inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-orange-50 to-orange-100 text-orange-700 hover:from-orange-100 hover:to-orange-200 dark:from-orange-900/50 dark:to-orange-800/50 dark:text-orange-300 dark:hover:from-orange-800/70 dark:hover:to-orange-700/70 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105"
-                                            >
-                                                <span className="text-base">📝</span>
-                                                <span className="hidden sm:inline">Submit Assignment</span>
-                                                <span className="sm:hidden">Submit</span>
-                                                <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                {/* Right Side: Score Display */}
-                                <div className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 rounded-xl bg-gray-50/50 dark:bg-gray-900/30 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 min-w-[100px] group-hover:bg-gray-100/50 dark:group-hover:bg-gray-900/50 transition-all duration-300">
-                                    <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
-                                        Score
-                                    </div>
-                                    {getScoreDisplay(score)}
-                                    {score !== null && score !== undefined && (
-                                        <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                                            / 100
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                    );
-                })}
-            </div>
+     return (
+    <div className="min-h-screen p-6 md:p-10">
+      <div className="max-w-6xl mx-auto">
+        
+        {/* Header */}
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">
+            Course <span className="gradient-text">Modules</span>
+          </h1>
+          <p className="text-gray-400 text-lg">
+            Track your progress and access course materials
+          </p>
         </div>
-    );
+
+        {/* Modules List */}
+        <div className="space-y-4">
+           {weeks.map((w: any) => {
+            const score = scoresMap[w.week];
+            
+            return (
+              <div 
+                key={w.week} 
+                className="group bg-slate-900/60 backdrop-blur-sm rounded-xl border border-slate-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300"
+              >
+                <div className="flex items-center justify-between p-6 md:p-7 gap-6">
+                  
+                  {/* Left: Module info */}
+                  <div className="flex items-center gap-5 flex-1 min-w-0">
+                    
+                    {/* Module number */}
+                    <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                      <span className="text-white font-bold text-lg">
+                        {w.week}
+                      </span>
+                    </div>
+
+                    {/* Title and links */}
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-xl md:text-2xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
+                        {w.title}
+                      </h2>
+                      <div className="flex items-center gap-4 flex-wrap">
+                        <a 
+                          href={w.doc_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 hover:bg-cyan-500/20 hover:border-cyan-500/40 transition-all duration-200"
+                        >
+                          <span>View Content</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+
+                        <a 
+                          href={w.submission_link} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200"
+                        >
+                          <span>Submit Assignment</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Right: Score */}
+                  <div className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 rounded-lg bg-slate-800/60 border border-slate-700/50 min-w-[100px]">
+                    <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
+                      Score
+                    </div>
+                    {getScoreDisplay(score)}
+                    {score !== null && score !== undefined && (
+                      <div className="text-xs text-gray-500 mt-1">
+                        / 100
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Hackathon Card */}
+        <div className="mt-6 bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700 p-6 md:p-7">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center text-2xl shadow-lg shadow-yellow-500/20">
+              🏆
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold text-white mb-1">Hackathon</h3>
+              <p className="text-gray-400">Final Assessment</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }
