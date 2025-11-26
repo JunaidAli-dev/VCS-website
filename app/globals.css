@@ -111,9 +111,12 @@ a {
     transition: color 0.2s ease;
 }
 
+
+/*
 a:hover {
-    color: #ffa500; /* Changed to orange for consistency */
-}
+    color: #ffa500; }
+*/
+
 
 /* Legacy Styles (if needed) */
 #root {
