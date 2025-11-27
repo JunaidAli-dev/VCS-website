@@ -45,7 +45,7 @@ export default function RegisterButton({ status }: RegisterButtonProps) {
         return (
             <a href="/course/registered">
                 <Button size="lg" className="bg-green-500 text-white rounded-full px-8">
-                    OPEN COURSE
+                    Submit Assignment
                 </Button>
             </a>
         );
