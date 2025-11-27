@@ -51,7 +51,7 @@ export default async function Home() {
     <div className="w-full bg-transparent">
       {/* Hero Section */}
       <section
-        className="min-h-[90vh] bg-cover bg-center bg-fixed relative pt-10"
+        className="min-h-[45vh] bg-cover bg-center bg-fixed relative pt-10"
         style={{ backgroundImage: "url('/new-bg.jpeg')" }}
       >
         {/* Overlay with Gradient */}
@@ -86,7 +86,7 @@ export default async function Home() {
 
                 {/* Outline style button */}
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/course">Explore Courses</Link>
+                  <Link href="/course">Explore Course</Link>
                 </Button>
               </div>
             </div>
