@@ -10,26 +10,26 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const courses = [
-  {
-    id: 1,
-    title: "Venture Capital 101",
-    short: "Learn the fundamentals of VC.",
-    duration: "8 Weeks",
-  },
-  {
-    id: 2,
-    title: "Startup Idea Validation",
-    short: "How to know if your idea is a winner.",
-    duration: "4 Weeks",
-  },
-  {
-    id: 3,
-    title: "Growth Hacking Basics",
-    short: "Scale your startup fast.",
-    duration: "6 Weeks",
-  },
-];
+// const courses = [
+//   {
+//     id: 1,
+//     title: "Venture Capital 101",
+//     short: "Learn the fundamentals of VC.",
+//     duration: "8 Weeks",
+//   },
+//   {
+//     id: 2,
+//     title: "Startup Idea Validation",
+//     short: "How to know if your idea is a winner.",
+//     duration: "4 Weeks",
+//   },
+//   {
+//     id: 3,
+//     title: "Growth Hacking Basics",
+//     short: "Scale your startup fast.",
+//     duration: "6 Weeks",
+//   },
+// ];
 
 const partners = [
   {
@@ -119,7 +119,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 pb-40 md:pb-40">
+      {/* <section className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 pb-40 md:pb-40">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-cyan-200 via-blue-200 to-blue-100 bg-clip-text text-transparent border-b-2 border-blue-500/50 pb-4 inline-block">
           Popular Courses
         </h2>
@@ -153,7 +153,7 @@ export default async function Home() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 pb-40 md:pb-40">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-cyan-200 via-blue-200 to-blue-100 bg-clip-text text-transparent border-b-2 border-blue-500/50 pb-4 inline-block">

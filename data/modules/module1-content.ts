@@ -15,7 +15,7 @@ export const module1Content: ModuleDetail[] = [
 
             <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">2. How Does Venture Capital Work?</h2>
             
-            If you are a business owner looking for funds to grow your company, you must first submit a business plan to a VC firm or the investors in consideration. After going through the plan, **due diligence** will occur on behalf of the VC financing firm. This background check usually involves inspecting the company’s products, services, history, and management. If your company completes the diligence process, the firm shall offer you the capital in return for an **equity stake**. From this stage, the investing firms can be involved in the company’s management, technical, or decision-making process. The ultimate aim is to see the company grow.
+            If you are a business owner looking for funds to grow your company, you must first submit a business plan to a VC firm or the investors in consideration. After going through the plan, due diligence will occur on behalf of the VC financing firm. This background check usually involves inspecting the company’s products, services, history, and management. If your company completes the diligence process, the firm shall offer you the capital in return for an equity stake. From this stage, the investing firms can be involved in the company’s management, technical, or decision-making process. The ultimate aim is to see the company grow.
 
             <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
             
@@ -47,35 +47,41 @@ export const module1Content: ModuleDetail[] = [
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Features of Venture Capital Investments</h3>
             
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>The tenure of investments is usually **long-term**.</li>
-                <li>VC firms invest in projects that exhibit **innovation and high growth potential**.</li>
-                <li>The funds are generally prone to **high risk** as the company’s growth may be uncertain in its initial stages.</li>
-                <li>The investors need to be patient in expecting the returns but can secure **significant capital gains** in the future.</li>
-                <li>The **liquidity is very low** in VC financing.</li>
+                <li>The tenure of investments is usually long-term.</li>
+                <li>VC firms invest in projects that exhibit innovation and high growth potential.</li>
+                <li>The funds are generally prone to high risk as the company’s growth may be uncertain in its initial stages.</li>
+                <li>The investors need to be patient in expecting the returns but can secure significant capital gains in the future.</li>
+                <li>The liquidity is very low in VC financing.</li>
             </ul>
 
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Venture Capitalists (VCs) and Their Features</h3>
             
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>**High Risk, High Reward:** These investments are high risk and high reward, thus attracting investors seeking high growth opportunities. VCs acknowledge inherent risks in investing in startups and early-stage companies. These investments have the potential for significant returns if the venture succeeds.</li>
-                <li>**Active Involvement in Management:** Venture capitalists actively involve themselves in the management of invested companies. This hands-on approach includes providing guidance, mentorship, and strategic advice. Active involvement aligns the interests of the venture capitalist with those of the entrepreneurs, creating a collaborative relationship.</li>
+                <li>High Risk, High Reward: These investments are high risk and high reward, thus attracting investors seeking high growth opportunities. VCs acknowledge inherent risks in investing in startups and early-stage companies. These investments have the potential for significant returns if the venture succeeds.</li>
+                <li>Active Involvement in Management: Venture capitalists actively involve themselves in the management of invested companies. This hands-on approach includes providing guidance, mentorship, and strategic advice. Active involvement aligns the interests of the venture capitalist with those of the entrepreneurs, creating a collaborative relationship.</li>
             </ul>
 
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Advantages Of Venture Capital</h3>
 
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>**Access to Capital:** Startups often struggle to secure traditional bank loans or attract investors due to their high-risk nature. Venture capital provides crucial funding, allowing entrepreneurs to pursue innovative ideas and scale their businesses more rapidly.</li>
-                <li>**Business Expertise and Mentorship:** Venture capitalists bring valuable expertise and mentorship in addition to financial support. These investors have extensive experience in the business world and a deep understanding of various industries. They can provide strategic guidance, help startups refine their business models, and connect them with relevant networks and resources.</li>
-                <li>**High Rewards for Investors:** Venture capital funding can be a lucrative investment opportunity for investors for significant returns. The expected returns on these investments are multiple times the initial capital.</li>
+                <li>Access to Capital: Startups often struggle to secure traditional bank loans or attract investors due to their high-risk nature. Venture capital provides crucial funding, allowing entrepreneurs to pursue innovative ideas and scale their businesses more rapidly.</li>
+                <li>Business Expertise and Mentorship: Venture capitalists bring valuable expertise and mentorship in addition to financial support. These investors have extensive experience in the business world and a deep understanding of various industries. They can provide strategic guidance, help startups refine their business models, and connect them with relevant networks and resources.</li>
+                <li>High Rewards for Investors: Venture capital funding can be a lucrative investment opportunity for investors for significant returns. The expected returns on these investments are multiple times the initial capital.</li>
             </ul>
             By providing access to capital and business expertise, venture capital funding is vital in fueling innovation, job creation, and economic growth.
 
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Disadvantages Of Venture Capital</h3>
             
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>**Loss of control:** When venture capitalists invest in a startup, they often demand a certain level of control and influence in the decision-making process. This can result in founders having to share power and compromise on important business decisions.</li>
-                <li>**Pressure for quick growth:** Venture capitalists typically expect a high return on their investment within a relatively shorter timeframe. This can put immense pressure on startup founders to achieve rapid growth and profitability, sometimes at the expense of long-term sustainability and strategic planning.</li>
-                <li>**Conflict of Interest:** Founders and Venture capitalists may have different visions for the company in the long term and this can hinder the important decision-making process for the company.</li>
+                <li>Loss of control: When venture capitalists invest in a startup, they often demand a certain level of control and influence in the decision-making process. This can result in founders having to share power and compromise on important business decisions.</li>
+                <li>Pressure for quick growth: Venture capitalists typically expect a high return on their investment within a relatively shorter timeframe. This can put immense pressure on startup founders to achieve rapid growth and profitability, sometimes at the expense of long-term sustainability and strategic planning.</li>
+                <li>Conflict of Interest: Founders and Venture capitalists may have different visions for the company in the long term and this can hinder the important decision-making process for the company.</li>
+            </ul>
+
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Resources for Further Learning</h3>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li>Venture Capital in 2 mins: <a href="https://youtu.be/JdrYoiQNB-c?si=eEoe8C-tthWQ6fxL" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Youtube</a></li>
+                <li>First video <a href="https://youtu.be/a4aUX5u90oA?si=38Wu3jl9PeBIwqaH" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Youtube</a></li>
             </ul>
         `,
     },
@@ -149,18 +155,27 @@ export const module1Content: ModuleDetail[] = [
             
             
 
+
 [Image of the typical Organizational Structure of a Venture Capital Firm]
+
+
 
 
             VC firms act as general partners (GPs), managing the fund and making investment decisions, while limited partners (LPs) provide the capital and share in the fund’s profits upon successful exits.
 
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Where do VC Firms get their money from?</h3>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>**Institutional Investors:** Pension funds, university endowments, insurance companies, and sovereign wealth funds.</li>
-                <li>**High-Net-Worth Individuals (HNWIs):** Wealthy individuals seeking high-growth investment opportunities.</li>
-                <li>**Family Offices:** Private entities managing the wealth of high-net-worth families.</li>
-                <li>**Corporations:** Large companies investing to explore new technologies or strategic partnerships.</li>
-                <li>**Fund-of-Funds:** Pooled investment vehicles that allocate capital across multiple VC funds.</li>
+                <li>Institutional Investors: Pension funds, university endowments, insurance companies, and sovereign wealth funds.</li>
+                <li>High-Net-Worth Individuals (HNWIs): Wealthy individuals seeking high-growth investment opportunities.</li>
+                <li>Family Offices: Private entities managing the wealth of high-net-worth families.</li>
+                <li>Corporations: Large companies investing to explore new technologies or strategic partnerships.</li>
+                <li>Fund-of-Funds: Pooled investment vehicles that allocate capital across multiple VC funds.</li>
+            </ul>
+            
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Resources for Further Learning</h3>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li>Anatomy of a VC Firm: <a href="https://www.goingvc.com/post/the-anatomy-of-a-venture-capital-firm-understanding-structure-and-operations" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Understanding Structure and Operations</a></li>
+                <li>Fund Structures: <a href="https://carta.com/learn/private-funds/structures/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Private Funds and Legal Structures</a></li>
             </ul>
         ` 
     },
@@ -171,21 +186,21 @@ export const module1Content: ModuleDetail[] = [
 
         <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Why do you need an investment thesis?</h3>
         <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-            <li>**Guides Decision-Making:** Provides a clear framework to evaluate opportunities and avoid distractions.</li>
-            <li>**Signals Expertise:** Positions the VC as an expert in specific sectors, attracting founders and co-investors.</li>
-            <li>**Focuses Resources:** Ensures the firm allocates time, capital, and expertise effectively.</li>
-            <li>**Aligns Internal Strategy:** Keeps all partners and associates aligned on the fund’s goals and priorities.</li>
-            <li>**Attracts LPs (Limited Partners):** A well-defined thesis assures LPs that the firm has a strategic approach to generating returns.</li>
+            <li>Guides Decision-Making: Provides a clear framework to evaluate opportunities and avoid distractions.</li>
+            <li>Signals Expertise: Positions the VC as an expert in specific sectors, attracting founders and co-investors.</li>
+            <li>Focuses Resources: Ensures the firm allocates time, capital, and expertise effectively.</li>
+            <li>Aligns Internal Strategy: Keeps all partners and associates aligned on the fund’s goals and priorities.</li>
+            <li>Attracts LPs (Limited Partners): A well-defined thesis assures LPs that the firm has a strategic approach to generating returns.</li>
         </ul>
 
         <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Components of an Investment Thesis</h3>
         <ol style="list-style-type: decimal; margin-left: 2rem; padding-left: 0;">
-            <li>**Investment Goals:** Defines what the investor aims to achieve—such as capital appreciation, income generation, etc.</li>
-            <li>**Risk Tolerance:** Sets the boundaries for acceptable risk levels (influenced by fund size, time horizon, and experience).</li>
-            <li>**Market Analysis:** Examines the broader environment (market size, growth rates, customer behavior).</li>
-            <li>**Industry Analysis:** Dives deeper into the specific sector (competitive landscape, barriers to entry, innovation cycles).</li>
-            <li>**Company Analysis:** Focuses on the individual business (management team, financial health, product-market fit).</li>
-            <li>**Exit Strategy:** Outlines how and when the investor plans to realize gains (IPOs, acquisitions).</li>
+            <li>Investment Goals: Defines what the investor aims to achieve—such as capital appreciation, income generation, etc.</li>
+            <li>Risk Tolerance: Sets the boundaries for acceptable risk levels (influenced by fund size, time horizon, and experience).</li>
+            <li>Market Analysis: Examines the broader environment (market size, growth rates, customer behavior).</li>
+            <li>Industry Analysis: Dives deeper into the specific sector (competitive landscape, barriers to entry, innovation cycles).</li>
+            <li>Company Analysis: Focuses on the individual business (management team, financial health, product-market fit).</li>
+            <li>Exit Strategy: Outlines how and when the investor plans to realize gains (IPOs, acquisitions).</li>
         </ol>
 
         <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
@@ -194,14 +209,14 @@ export const module1Content: ModuleDetail[] = [
         
         <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Top-Down Investment Thesis</h3>
         <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-            <li>**Macro-Driven:** Starts with broad analysis of macroeconomic trends, industry shifts, or geographic opportunities.</li>
-            <li>**Sector Focus:** Investors first identify sectors expected to outperform due to favorable conditions.</li>
+            <li>Macro-Driven: Starts with broad analysis of macroeconomic trends, industry shifts, or geographic opportunities.</li>
+            <li>Sector Focus: Investors first identify sectors expected to outperform due to favorable conditions.</li>
         </ul>
 
         <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Bottom-Up Investment Thesis</h3>
         <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-            <li>**Micro-Driven:** Begins with deep analysis of individual companies, focusing on their financials, management, and product.</li>
-            <li>**Company First:** Investors look for strong fundamentals and operational excellence at the company level.</li>
+            <li>Micro-Driven: Begins with deep analysis of individual companies, focusing on their financials, management, and product.</li>
+            <li>Company First: Investors look for strong fundamentals and operational excellence at the company level.</li>
         </ul>
         
         <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
@@ -220,36 +235,50 @@ export const module1Content: ModuleDetail[] = [
             </thead>
             <tbody>
                 <tr style="border-bottom: 1px solid #333;">
-                    <td style="padding: 12px;">**Pre-Seed Funding**</td>
+                    <td style="padding: 12px;">Pre-Seed Funding</td>
                     <td style="padding: 12px;">Turn an idea into a prototype or MVP.</td>
                     <td style="padding: 12px;">Founders, Friends & Family, Angel Investors.</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #333;">
-                    <td style="padding: 12px;">**Seed Funding**</td>
+                    <td style="padding: 12px;">Seed Funding</td>
                     <td style="padding: 12px;">Validate product-market fit and start gaining traction.</td>
                     <td style="padding: 12px;">Angel Investors, Seed-stage VC firms, Accelerators.</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #333;">
-                    <td style="padding: 12px;">**Series A Funding**</td>
+                    <td style="padding: 12px;">Series A Funding</td>
                     <td style="padding: 12px;">To scale the product and optimize the business model.</td>
                     <td style="padding: 12px;">Venture Capital Firms and Angel Investors.</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #333;">
-                    <td style="padding: 12px;">**Series B Funding**</td>
+                    <td style="padding: 12px;">Series B Funding</td>
                     <td style="padding: 12px;">To fuel growth and expand into new markets.</td>
                     <td style="padding: 12px;">Venture Capital Firms, Late-stage investors, Corporate Investors.</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #333;">
-                    <td style="padding: 12px;">**Series C Funding**</td>
+                    <td style="padding: 12px;">Series C Funding</td>
                     <td style="padding: 12px;">To drive massive growth, enter global markets, or prepare for acquisition.</td>
                     <td style="padding: 12px;">Venture Capital Firms, Private Equity Firms, Hedge Funds.</td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px;">**IPO**</td>
+                    <td style="padding: 12px;">IPO</td>
                     <td style="padding: 12px;">To raise funds from the public market.</td>
                     <td style="padding: 12px;">Public Investors (Institutional and Retail).</td>
                 </tr>
             </tbody>
         </table>
+        
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Resources for Further Learning</h3>
+        <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+            <li><a href="https://youtu.be/DsiDES1JOQc?si=Mk4R2vGzm5BmgcMY" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">YouTube: The Venture Capital Business Model Explained</a></li>
+            <li><a href="https://youtu.be/zb6VAk7S0z8?si=Or4Tmt7OM9cV7t9I" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">YouTube: The Only 7 Ways to Get Rich (Advanced)</a></li>
+            <li><a href="https://youtu.be/9EO2TpcnSPw?si=Zuauo8URMeRUlj5n" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">YouTube: Venture Capital vs Private Equity - The Difference</a></li>
+            <li><a href="https://youtu.be/DJzZtwDvczM?si=ptLWgVv5w9ycjxaT" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">YouTube: What is Venture Capital?</a></li>
+            <li><a href="https://govclab.com/2023/11/21/venture-capital-investment-thesis/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: VC Investment Thesis Deep Dive (Govclab)</a></li>
+            <li><a href="https://www.bajajfinserv.in/investments/investment-thesis" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: Investment Thesis Guide (Bajaj Finserv)</a></li>
+            <li><a href="https://tiomarkets.com/article/investment-thesis-guide" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: Investment Thesis Guide (TioMarkets)</a></li>
+            <li><a href="https://www.c-suite-strategy.com/blog/crafting-a-compelling-investment-thesis-for-strategic-growth" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: Crafting a Compelling Investment Thesis</a></li>
+            <li><a href="https://growthequityinterviewguide.com/venture-capital/venture-capital-industry/venture-capital-investment-process" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: VC Investment Process Guide</a></li>
+            <li><a href="https://growthequityinterviewguide.com/venture-capital/venture-capital-industry/investment-thesis" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Article: Investment Thesis Guide (Growth Equity)</a></li>
+        </ul>
     ` },
 ];
