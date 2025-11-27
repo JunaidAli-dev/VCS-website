@@ -47,21 +47,19 @@ const Footer = () => {
             <h5 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-6">
               Important
             </h5>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+            <div className="grid grid-cols-2 gap-y-2">
               <ul className="space-y-2">
                 <li><Link href="/" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Home</Link></li>
-                <li><Link href="/events" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Events</Link></li>
-                <li><a href="https://medium.com/ecelliitbhu/feature/home" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Blogs</a></li>
-                <li><a href="https://bit.ly/build-with-us-ecell" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Initiatives</a></li>
-                <li><Link href="/gallery" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Gallery</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/events/" target="blank" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Events</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/gallery/" target="blank" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Gallery</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/contacts/" target="blank" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Contact Us</Link></li>
+
               </ul>
 
               <ul className="space-y-2">
-                <li><Link href="/who_we_are" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Who we are?</Link></li>
-                <li><Link href="" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">How E-Cell works</Link></li>
-                <li><Link href="/team" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Meet the team</Link></li>
-                <li><a href="https://tiiciitbhu.org/" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">I-3 F</a></li>
-                <li><Link href="/contacts" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Contact Us</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/who_we_are/" target="blank" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Who we are?</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/events/" target="blank" className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">How E-Cell works</Link></li>
+                <li><Link href="https://www.ecelliitbhu.com/team/" target="blank"className="text-sm text-slate-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block">Meet the team</Link></li>
               </ul>
             </div>
           </div>
