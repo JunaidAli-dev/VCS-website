@@ -16,7 +16,7 @@ const buttonVariants = cva(
    transition-all duration-300 ease-out hover:scale-[1.03] active:scale-[0.98]",
 
         cosmic:
-          "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white hover:from-blue-400 hover:via-purple-400 hover:to-pink-400 shadow-lg shadow-purple-500/40 hover:shadow-xl hover:shadow-pink-500/50 hover:scale-105 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
+          "bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 text-white hover:from-blue-400 hover:via-cyan-400 hover:to-cyan-400 shadow-lg shadow-blue-500/40 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
         gradient:
           "bg-gradient-to-r from-blue-600 via-cyan-500 to-yellow-400 text-white hover:from-blue-500 hover:via-cyan-400 hover:to-yellow-300 shadow-[0_0_20px_rgba(34,211,238,0.5)] hover:shadow-[0_0_30px_rgba(34,211,238,0.7),0_0_60px_rgba(34,211,238,0.4)] hover:scale-105",
         outline:
