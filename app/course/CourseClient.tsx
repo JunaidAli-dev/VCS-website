@@ -150,10 +150,27 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // const handleModuleClick = (moduleNumber: number) => {
+  //   setActiveModule(moduleNumber);
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
+
   const handleModuleClick = (moduleNumber: number) => {
-    setActiveModule(moduleNumber);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  if (status === "no-session") {
+    window.location.href = "/auth";
+    return;
+  }
+
+  if (status === "unregistered") {
+    window.location.href = "/course/register";
+    return;
+  }
+
+  // Only registered users can view modules
+  setActiveModule(moduleNumber);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 
   const handleBackClick = () => {
     setActiveModule(null);
