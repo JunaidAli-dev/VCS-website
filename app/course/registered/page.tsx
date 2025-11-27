@@ -1,4 +1,6 @@
 import { auth } from "@/auth";
+import { headers } from "next/headers";
+import React from 'react'; // Added React import for safety
 
 export default async function Page() {
     const session = await auth();
@@ -95,6 +97,9 @@ export default async function Page() {
                         {w.title}
                       </h2>
                       <div className="flex items-center gap-4 flex-wrap">
+                        
+                        {/* 🚫 REMOVED: View Content Button Block 
+                        
                         <a 
                           href={w.doc_url} 
                           target="_blank" 
@@ -106,6 +111,8 @@ export default async function Page() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
                         </a>
+                        
+                        */}
 
                         <a 
                           href={w.submission_link} 
