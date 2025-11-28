@@ -10,6 +10,9 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
+import { auth } from "@/auth";
+import { headers } from "next/headers";
+import HomeClient from "./HomeClient";
 
 // const courses = [
 //   {
@@ -46,6 +49,38 @@ const partners = [
 ];
 
 export default async function Home() {
+
+
+ const session = await auth();
+  let status: "no-session" | "unregistered" | "registered" = "no-session";
+
+  if (session?.user?.email) {
+    try {
+      const headerList = await headers();
+      const host =
+        headerList.get("x-forwarded-host") ||
+        headerList.get("host") ||
+        "localhost:3000";
+
+      const protocol =
+        headerList.get("x-forwarded-proto") ||
+        (process.env.NODE_ENV === "production" ? "https" : "http");
+
+      const baseUrl = `${protocol}://${host}`;
+
+      const req = await fetch(`${baseUrl}/api/user/${session.user.email}`, {
+        cache: "no-store",
+      });
+
+      if (req.ok) {
+        const res = await req.json();
+        status = res?.registered_course_id ? "registered" : "unregistered";
+      }
+    } catch (err) {
+      console.error("Landing page status error:", err);
+    }
+  }
+
   return (
     <div className="w-full bg-transparent">
       {/* Hero Section */}
@@ -76,19 +111,7 @@ export default async function Home() {
                 real deal-flow exposure for career-ready investing skills.
               </p>
 
-              <div className="flex gap-4 flex-wrap pt-4">
-                {/* Primary gradient button */}
-                <Button asChild variant="default" size="lg">
-                  <Link href="/auth">Join Now
-                  <MdArrowOutward />
-                   </Link>
-                </Button>
-
-                {/* Outline style button */}
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/course">Explore Course</Link>
-                </Button>
-              </div>
+                <HomeClient status={status} />
             </div>
 
             {/* <Card className="bg-zinc-900/80 backdrop-blur-md p-6 md:p-8 hover:border-blue-400/50 transition-all duration-300">
