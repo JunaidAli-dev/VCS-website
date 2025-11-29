@@ -124,7 +124,7 @@ const ModuleDetailPage: React.FC<ModuleDetailPageProps> = ({
             </h3>
             {/* Simplified className relies on inline CSS from data files */}
             <div
-              className="prose prose-invert max-w-none text-muted-foreground"
+              className="prose prose-invert max-w-none text-muted-foreground [&_a]:text-yellow-400 [&_a]:underline [&_a]:cursor-pointer [&_a]:hover:text-yellow-300 [&_a]:transition-colors [&_a]:relative [&_a]:z-10"
               dangerouslySetInnerHTML={{ __html: day.detail }}
             />
             {/* Example Image for context */}
@@ -139,7 +139,6 @@ const ModuleDetailPage: React.FC<ModuleDetailPageProps> = ({
 };
 
 // --- Main Course Client Component ---
-// (No changes here, remains the same)
 
 const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
   const [activeModule, setActiveModule] = useState<number | null>(null);
@@ -149,11 +148,6 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
       .getElementById("course-structure")
       ?.scrollIntoView({ behavior: "smooth" });
   };
-
-  // const handleModuleClick = (moduleNumber: number) => {
-  //   setActiveModule(moduleNumber);
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
 
   const handleModuleClick = (moduleNumber: number) => {
     if (status === "no-session") {
@@ -315,7 +309,13 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
               key={module.module}
               className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-orange-500 transition-all duration-300 group cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
-              onClick={() => handleModuleClick(module.module)}
+              onClick={(e) => {
+                // Don't trigger if clicking on a link
+                if ((e.target as HTMLElement).tagName === 'A') {
+                  return;
+                }
+                handleModuleClick(module.module);
+              }}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center border border-orange-500/20 group-hover:border-orange-500 transition-colors">
@@ -358,7 +358,7 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
               Final Assessment
             </h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Apply everything you’ve learned in a thrilling hackathon with
+              Apply everything you've learned in a thrilling hackathon with
               real-world tasks, peer competition, and certification.
             </p>
           </Card>
