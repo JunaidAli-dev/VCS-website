@@ -3,7 +3,7 @@ import { ModuleDetail } from "@/data/course-data";
 export const module4Content: ModuleDetail[] = [
     
     {
-        day: "Day 10 Part1",
+        day: "Day 9 Part1",
         content: "Venture Capital in India: Landscape and Outlook",
         detail: `
             <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">The History of Venture Capital: Origin and an Indian Perspective</h2>
@@ -56,7 +56,7 @@ export const module4Content: ModuleDetail[] = [
         `,
     },
     {
-        day: "Day 10 part2",
+        day: "Day 9 part2",
         content: "Indian VC Culture vs Global VC Culture",
         detail: `
             <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Indian VC Culture vs Global VC Culture</h2>
@@ -119,7 +119,7 @@ export const module4Content: ModuleDetail[] = [
         `,
     },
     {
-        day: "Day 10 Part3",
+        day: "Day 9 Part3",
         content: "Impact of Global Events on VC Trends",
         detail: `
             <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Impact of Global Events on VC Trends</h2>
