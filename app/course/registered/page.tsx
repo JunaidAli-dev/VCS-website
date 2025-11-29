@@ -120,13 +120,14 @@ export default async function Page() {
                         
                         */}
 
-                        <a
+{/* button with attempt, submit */}
+                        {/* <a
                           href={w.submission_link}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200"
                         >
-                          {/* <span>Submit Assignment</span> */}
+                         
                           <span>
                             {[1, 3, 5].includes(w.week)
                               ? "Attempt Quiz"
@@ -145,7 +146,54 @@ export default async function Page() {
                               d="M9 5l7 7-7 7"
                             />
                           </svg>
-                        </a>
+                        </a> */}
+                        
+
+               {/* new for disabled before three divs */}
+                        {/* Disabled Button with Coming Soon Badge */}
+                        <div className="inline-flex items-center gap-3">
+                          <button
+                            disabled
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-slate-800/50 text-slate-500 border border-slate-700/50 cursor-not-allowed opacity-60"
+                          >
+                            <span>
+                              {[1, 3, 5].includes(w.week)
+                                ? "Attempt Quiz"
+                                : "Submit Assignment"}
+                            </span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </button>
+                          
+                          {/* Coming Soon Badge */}
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
+                            <svg 
+                              className="w-3 h-3" 
+                              fill="currentColor" 
+                              viewBox="0 0 20 20"
+                            >
+                              <path 
+                                fillRule="evenodd" 
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" 
+                                clipRule="evenodd" 
+                              />
+                            </svg>
+                            Coming Soon
+                          </span>
+                        </div>
+
+                        
                       </div>
                     </div>
                   </div>
