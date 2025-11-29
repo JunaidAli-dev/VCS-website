@@ -190,34 +190,72 @@ export default async function Home() {
               </Card>
 
               <Card className="bg-zinc-900/80 backdrop-blur-md p-6 md:p-8 hover:border-blue-400/50 transition-all duration-300">
-                <CardHeader className="p-0 mb-4">
-                  <CardTitle className="text-lg md:text-xl font-bold flex items-center gap-2">
-                    <span className="text-2xl">📅</span>
-                    Live Sessions
-                  </CardTitle>
-                </CardHeader>
+  <CardHeader className="p-0 mb-4">
+    <CardTitle className="text-lg md:text-xl font-bold flex items-center gap-2">
+      <span className="text-2xl">📅</span>
+      Live Sessions
+    </CardTitle>
+  </CardHeader>
 
-                <CardContent className="p-0">
-                  <ul className="space-y-3 text-gray-300 text-sm">
-                    <li>
-                      <span className="text-blue-400 font-semibold">29th Nov (Day 1):</span> Introductory session
-                    </li>
-                    <li>
-                      <span className="text-blue-400 font-semibold">4th Dec (Day 6):</span> Analysis + Due Diligence
-                    </li>
-                    <li>
-                      <span className="text-blue-400 font-semibold">9th Dec (Day 11):</span> Term Sheets
-                    </li>
-                    <li>
-                      <span className="text-blue-400 font-semibold">11th Dec (Day 13):</span> VC as a Career
-                    </li>
-                    <li>
-                      <span className="text-blue-400 font-semibold">13th Dec (Day 15):</span> Closing session (PS Release)
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
+  <CardContent className="p-0">
+    <div className="overflow-x-auto"> {/* Added to handle potential overflow on small screens */}
+      <table className="w-full text-sm text-left text-gray-300">
+        <thead>
+          <tr className="border-b border-zinc-700/50">
+            <th scope="col" className="py-2 pr-3 font-semibold text-blue-400 whitespace-nowrap">
+              Date (Day)
+            </th>
+            <th scope="col" className="py-2 pl-3 font-semibold text-blue-400">
+              Session Topic
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition duration-150">
+            <td className="py-2 pr-3 text-blue-400 font-semibold whitespace-nowrap">
+              29th Nov (Day 1)
+            </td>
+            <td className="py-2 pl-3">
+              Introductory session
+            </td>
+          </tr>
+          <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition duration-150">
+            <td className="py-2 pr-3 text-blue-400 font-semibold whitespace-nowrap">
+              4th Dec (Day 6)
+            </td>
+            <td className="py-2 pl-3">
+              Analysis + Due Diligence
+            </td>
+          </tr>
+          <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition duration-150">
+            <td className="py-2 pr-3 text-blue-400 font-semibold whitespace-nowrap">
+              9th Dec (Day 11)
+            </td>
+            <td className="py-2 pl-3">
+              Term Sheets
+            </td>
+          </tr>
+          <tr className="border-b border-zinc-800 hover:bg-zinc-800/50 transition duration-150">
+            <td className="py-2 pr-3 text-blue-400 font-semibold whitespace-nowrap">
+              11th Dec (Day 13)
+            </td>
+            <td className="py-2 pl-3">
+              VC as a Career
+            </td>
+          </tr>
+          <tr className="hover:bg-zinc-800/50 transition duration-150">
+            <td className="py-2 pr-3 text-blue-400 font-semibold whitespace-nowrap">
+              13th Dec (Day 15)
+            </td>
+            <td className="py-2 pl-3">
+              Closing session (PS Release)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </CardContent>
+</Card>
             </div>
           </section>
         </div>
