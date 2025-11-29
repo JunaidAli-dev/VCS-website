@@ -156,21 +156,20 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
   // };
 
   const handleModuleClick = (moduleNumber: number) => {
-  if (status === "no-session") {
-    window.location.href = "/auth";
-    return;
-  }
+    if (status === "no-session") {
+      window.location.href = "/auth";
+      return;
+    }
 
-  if (status === "unregistered") {
-    window.location.href = "/course/register";
-    return;
-  }
+    if (status === "unregistered") {
+      window.location.href = "/course/register";
+      return;
+    }
 
-  // Only registered users can view modules
-  setActiveModule(moduleNumber);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
+    // Only registered users can view modules
+    setActiveModule(moduleNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const handleBackClick = () => {
     setActiveModule(null);
@@ -246,23 +245,18 @@ const CourseClient: React.FC<CourseClientProps> = ({ status }) => {
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-end pt-4">
               <RegisterButton status={status} />
-              {/* 
-                            <a
-                                href="https://chat.whatsapp.com/FKpfFAEdb001JPVIeDh1J0?mode=wwt"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="px-6 py-3 bg-[#FF8C00] text-black font-semibold rounded-full hover:bg-[#FFA500] hover:text-black active:scale-95 transition-all shadow-lg hover:shadow-[#FF8C00]/50"                            >
-                                JOIN WHATSAPP GROUP
-                            </a> */}
-              <Button asChild size="lg" variant="default">
-                <a
-                  href="https://chat.whatsapp.com/FKpfFAEdb001JPVIeDh1J0?mode=wwt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  JOIN WHATSAPP GROUP
-                </a>
-              </Button>
+
+              {status === "registered" && (
+                <Button asChild size="lg" variant="default">
+                  <a
+                    href="https://chat.whatsapp.com/FKpfFAEdb001JPVIeDh1J0?mode=wwt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    JOIN WHATSAPP GROUP
+                  </a>
+                </Button>
+              )}
             </div>
 
             <button
