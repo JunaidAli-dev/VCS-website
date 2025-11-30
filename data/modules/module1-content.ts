@@ -150,12 +150,12 @@ export const module1Content: ModuleDetail[] = [
             <p>After successful due diligence, the VC partners meet to decide on terms. A term sheet is drafted outlining key deal terms (Investment amount, Equity stake, Valuation, Board seats, Liquidation preferences).</p>
             
             <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Investment Committee (IC)</h4>
-            <p>The IC is typically composed of senior partners who review and approve investment proposals, assessing strategic fit, risk-return profiles, and competitive dynamics. Approval from the IC is mandatory before any capital commitment. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">firmroom.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">goingvc.com</a></p>
+            <p>The IC is typically composed of senior partners who review and approve investment proposals, assessing strategic fit, risk-return profiles, and competitive dynamics. Approval from the IC is mandatory before any capital commitment. </p>
     
     
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">5. Portfolio Management and Support</h3>
             <p>Post-investment, VC firms actively engage with the startup to maximize value creation, providing Strategic guidance, Mentorship, Hiring support, and Business development.</p>
-            <p>Active portfolio management involves closely monitoring financial and operational KPIs, maintaining regular communication with founders, and providing strategic guidance. The Platform team often drives value-add initiatives and tailored services to accelerate growth and mitigate risks. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">fundwave.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">getproven.com</a></p>
+            <p>Active portfolio management involves closely monitoring financial and operational KPIs, maintaining regular communication with founders, and providing strategic guidance. The Platform team often drives value-add initiatives and tailored services to accelerate growth and mitigate risks. </p>
             
             <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">VC PLATFORM (Value-Add Role)</h4>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
@@ -165,11 +165,11 @@ export const module1Content: ModuleDetail[] = [
     
     
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">6. Exit Strategy and Returns Distribution</h3>
-            <p>The goal is a successful exit (typically 7-10 years) via: IPO, Acquisition (M&A), or Secondary sales. Upon exit, returns are distributed back to the LPs and GPs. Exit is the liquidity event where the VC realizes a return on investment. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">fundwave.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">getproven.com</a></p>
+            <p>The goal is a successful exit (typically 7-10 years) via: IPO, Acquisition (M&A), or Secondary sales. Upon exit, returns are distributed back to the LPs and GPs. Exit is the liquidity event where the VC realizes a return on investment. </p>
     
             <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
     
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">COLLABORATION AMONGST TEAMS (Internal Operations)</h2>
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">COLLABORATION AMONGST TEAMS</h2>
             
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Team Roles and Responsibilities</h3>
     
@@ -195,12 +195,18 @@ export const module1Content: ModuleDetail[] = [
     
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Best Practices for Effective Cross-Team Collaboration</h3>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Clear goal alignment and role definitions.</li>
-                <li>Open and frequent communication (regular updates, standups, and cross-team meetings).</li>
-                <li>Use of feedback loops (continual review sessions).</li>
-                <li>Empowered leadership (Team leads and partners actively facilitate collaboration).</li>
-                <li>Shared technology platforms (Utilise CRM, project management, and communication tools).</li>
-                <li>Focus on culture and trust.</li>
+                <li>Clear goal alignment and role definitions: Avoid duplication and ensure accountability by defining each team’s role and how they interact.
+</li>
+                <li>Open and frequent communication: Regular updates, standups, and cross-team meetings sustain transparency and agility.
+.</li>
+                <li>Use of feedback loops: Continual review sessions where teams share insights, challenges, and successes help maintain alignment and adaptability.
+.</li>
+                <li>Empowered leadership: Team leads and partners should actively facilitate collaboration and address bottlenecks and conflicts promptly.
+.</li>
+                <li>Shared technology platforms: Utilise CRM, project management, and communication tools that bridge teams seamlessly.
+.</li>
+                <li>Focus on culture and trust: Building mutual respect and understanding among teams creates a cooperative environment, critical for startups’ success and fund performance.
+.</li>
             </ul>
             
             <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
