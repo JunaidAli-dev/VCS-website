@@ -93,28 +93,28 @@ export const module1Content: ModuleDetail[] = [
             <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Organizational Structure of a VC Firm</h2>
             
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">a. Limited Partners (LPs)</h3>
-            These are the investors who provide the bulk of the capital for the fund. LPs can include institutional investors (pension funds, insurance companies, endowments), high-net-worth individuals (HNWIs), family offices, corporations, and fund-of-funds. They share in the profits but have limited liability and no role in day-to-day decisions.
-
+            <p>These are the investors who provide the bulk of the capital for the fund. LPs can include institutional investors (pension funds, insurance companies, endowments), high-net-worth individuals (HNWIs), family offices, corporations, and fund-of-funds. They share in the profits but have limited liability and no role in day-to-day decisions.</p>
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">b. General Partners (GPs)</h3>
-            The GPs are the core managers of the VC fund. They make investment decisions, manage portfolio companies, and are responsible for generating returns. GPs also raise capital from LPs and earn compensation through management fees (typically 2%) and carried interest (around 20% of profits).
+            <p>The GPs are the core managers of the VC fund. They make investment decisions, manage portfolio companies, and are responsible for generating returns. GPs also raise capital from LPs and earn compensation through management fees (typically 2%) and carried interest (around 20% of profits).</p>
             
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">c. Investment Committee (IC)</h3>
-            The IC is a senior group within the firm that evaluates and approves investment proposals. It ensures that deals align with the fund’s strategy, risk profile, and ethical standards. Final investment decisions usually require IC approval.
-
+            <p>The IC is a senior group within the firm that evaluates and approves investment proposals. It ensures that deals align with the fund’s strategy, risk profile, and ethical standards. Final investment decisions usually require IC approval.</p>
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">d. Principals / Associates / Analysts</h3>
-            These are professionals involved in the execution side of investments:
+            <p>These are professionals involved in the execution side of investments:</p>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
                 <li>Analysts conduct market research and initial screenings.</li>
                 <li>Associates participate in due diligence, financial modeling, and portfolio monitoring.</li>
                 <li>Principals help negotiate deals and may lead smaller investments.</li>
             </ul>
-
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">e. Operations & Support Teams</h3>
-            They handle the non-investment functions: finance, compliance, investor relations, HR, legal documentation, and marketing. Their work ensures the fund’s smooth functioning and regulatory compliance.
-
+            <p>They handle the non-investment functions: finance, compliance, investor relations, HR, legal documentation, and marketing. Their work ensures the fund’s smooth functioning and regulatory compliance.</p>
+    
             <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Working Mechanism of a VC Firm</h2>
+    
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Working Mechanism of a VC Firm (The Fund Lifecycle)</h2>
             
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
                 <li>Fundraising from LPs</li>
@@ -126,13 +126,18 @@ export const module1Content: ModuleDetail[] = [
             </ul>
             
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">1. Fundraising from Limited Partners (LPs)</h3>
-            VC firms begin by raising capital from Limited Partners (LPs), who are typically institutional investors (pension funds, insurance companies), high-net-worth individuals, family offices, or corporations. LPs commit a fixed amount to the VC fund. This phase often takes months or even years.
-
+            <p>VC firms begin by raising capital from Limited Partners (LPs), who are typically institutional investors (pension funds, insurance companies), high-net-worth individuals, family offices, or corporations. LPs commit a fixed amount to the VC fund. This phase often takes months or even years.</p>
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">2. Deal Sourcing and Screening</h3>
-            VC firms continuously source potential startups for investment through their networks, referrals, industry events, and applications. The screening process involves quickly evaluating the business idea, market potential, and team expertise.
-
+            <p>VC firms continuously source potential startups for investment through their networks, referrals, industry events, and applications. The screening process involves quickly evaluating the business idea, market potential, and team expertise.</p>
+            
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">VC Deal Sourcing (External)</h4>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li><a href="https://coresignal.com/blog/vc-deal-sourcing/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">VC Deal Sourcing Strategies (CoreSignal)</a></li>
+            </ul>
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">3. Due Diligence Process</h3>
-            For startups that pass the initial screen, VC firms perform in-depth due diligence. This includes:
+            <p>For startups that pass the initial screen, VC firms perform in-depth due diligence. This includes:</p>
             <ul style="list-style-type: circle; margin-left: 3rem; padding-left: 0;">
                 <li>Financial analysis: Revenue models, burn rate, projections.</li>
                 <li>Market assessment: Size, competition, growth trends.</li>
@@ -140,43 +145,90 @@ export const module1Content: ModuleDetail[] = [
                 <li>Team assessment: Founders’ background, domain expertise.</li>
                 <li>Legal review: Compliance, contracts, potential liabilities.</li>
             </ul>
-
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">4. Investment Decision & Term Sheet</h3>
-            After successful due diligence, the VC partners meet to decide on terms. A term sheet is drafted outlining key deal terms (Investment amount, Equity stake, Valuation, Board seats, Liquidation preferences).
-
+            <p>After successful due diligence, the VC partners meet to decide on terms. A term sheet is drafted outlining key deal terms (Investment amount, Equity stake, Valuation, Board seats, Liquidation preferences).</p>
+            
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Investment Committee (IC)</h4>
+            <p>The IC is typically composed of senior partners who review and approve investment proposals, assessing strategic fit, risk-return profiles, and competitive dynamics. Approval from the IC is mandatory before any capital commitment. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">firmroom.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">goingvc.com</a></p>
+    
+    
             <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">5. Portfolio Management and Support</h3>
-            Post-investment, VC firms actively engage with the startup to maximize value creation, providing Strategic guidance, Mentorship, Hiring support, and Business development.
-
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">6. Exit Strategy and Returns Distribution</h3>
-            The goal is a successful exit (typically 7-10 years) via: IPO, Acquisition (M&A), or Secondary sales. Upon exit, returns are distributed back to the LPs and GPs.
-
-            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">ANATOMY OF A VC FIRM & FUNDING SOURCES</h2>
+            <p>Post-investment, VC firms actively engage with the startup to maximize value creation, providing Strategic guidance, Mentorship, Hiring support, and Business development.</p>
+            <p>Active portfolio management involves closely monitoring financial and operational KPIs, maintaining regular communication with founders, and providing strategic guidance. The Platform team often drives value-add initiatives and tailored services to accelerate growth and mitigate risks. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">fundwave.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">getproven.com</a></p>
             
-            
-
-
-[Image of the typical Organizational Structure of a Venture Capital Firm]
-
-
-
-
-            VC firms act as general partners (GPs), managing the fund and making investment decisions, while limited partners (LPs) provide the capital and share in the fund’s profits upon successful exits.
-
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Where do VC Firms get their money from?</h3>
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">VC PLATFORM (Value-Add Role)</h4>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Institutional Investors: Pension funds, university endowments, insurance companies, and sovereign wealth funds.</li>
-                <li>High-Net-Worth Individuals (HNWIs): Wealthy individuals seeking high-growth investment opportunities.</li>
-                <li>Family Offices: Private entities managing the wealth of high-net-worth families.</li>
-                <li>Corporations: Large companies investing to explore new technologies or strategic partnerships.</li>
-                <li>Fund-of-Funds: Pooled investment vehicles that allocate capital across multiple VC funds.</li>
+                <li><a href="https://www.getproven.com/blog/what-is-a-vc-platform" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">What is a VC Platform (GetProven)</a></li>
+                <li><a href="https://www.goingvc.com/post/everything-you-need-to-know-about-the-vc-platform-role" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Everything you need to know about the VC Platform Role (GoingVC)</a></li>
+            </ul>
+    
+    
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">6. Exit Strategy and Returns Distribution</h3>
+            <p>The goal is a successful exit (typically 7-10 years) via: IPO, Acquisition (M&A), or Secondary sales. Upon exit, returns are distributed back to the LPs and GPs. Exit is the liquidity event where the VC realizes a return on investment. <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">fundwave.com</a> | <a href="#" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">getproven.com</a></p>
+    
+            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+    
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">COLLABORATION AMONGST TEAMS (Internal Operations)</h2>
+            
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Team Roles and Responsibilities</h3>
+    
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Research Team (Sourcing)</h4>
+            <p>The Research team is the front line of deal sourcing. They continuously scan markets, emerging technologies, and sectors to identify promising startups. Their key responsibilities include gathering market intelligence, performing competitive analysis, and delivering deep data insights, which help build a qualified deal pipeline.</p>
+            
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Investment Team (Diligence & Decision)</h4>
+            <p>The Investment team includes roles from analysts up to partners and is responsible for leading the core investment activities. This team evaluates startups thoroughly—managing the due diligence process, negotiating terms, presenting cases to the Investment Committee (IC), and ultimately making investment decisions.</p>
+    
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Platform Team (Value Creation)</h4>
+            <p>The Platform team enhances the value proposition of the VC by delivering operational and strategic support to portfolio companies beyond capital. Their services can include talent acquisition, marketing strategy, business development, and technical mentorship. The Platform team acts as a connector and resource hub.</p>
+    
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Operations (Ops) Team (Backend & Compliance)</h4>
+            <p>The Ops team manages all backend functions of the VC firm—fund administration, legal compliance, LP communications, financial reporting, and accounting. Their role ensures the Investment and Platform teams operate without administrative hurdles, managing capital calls and regulatory adherence.</p>
+            
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">How These Teams Collaborate</h3>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li>Research feeds market data and vetted deal flow to the Investment team.</li>
+                <li>Investment professionals conduct deeper analysis and decisions, working closely with Platform to support startups strategically.</li>
+                <li>Platform amplifies portfolio success via tailored operational help, feeding insights back to Investment on evolving portfolio needs.</li>
+                <li>Operations underpins all with firm infrastructure and compliance.</li>
+            </ul>
+    
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Best Practices for Effective Cross-Team Collaboration</h3>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li>Clear goal alignment and role definitions.</li>
+                <li>Open and frequent communication (regular updates, standups, and cross-team meetings).</li>
+                <li>Use of feedback loops (continual review sessions).</li>
+                <li>Empowered leadership (Team leads and partners actively facilitate collaboration).</li>
+                <li>Shared technology platforms (Utilise CRM, project management, and communication tools).</li>
+                <li>Focus on culture and trust.</li>
             </ul>
             
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Resources for Further Learning</h3>
+            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+    
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">SUMMARY & ADVANCED ROLES</h2>
+    
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Summary for a VC Analyst</h3>
+            <p>As an analyst, you will engage primarily with Research and Investment teams—conducting market scans, preparing diligence materials, and assisting in deal analysis. Understanding how these teams integrate with Platform and Operations broadens your perspective on how portfolio value is created and how back-office functions sustain firm health. Strong collaboration skills and cross-team awareness will distinguish you and add meaningful impact.</p>
+    
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Advanced VC Roles</h3>
+            
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">VC Scout (Referral Agent)</h4>
             <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Anatomy of a VC Firm: <a href="https://www.goingvc.com/post/the-anatomy-of-a-venture-capital-firm-understanding-structure-and-operations" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Understanding Structure and Operations</a></li>
-                <li>Fund Structures: <a href="https://carta.com/learn/private-funds/structures/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Private Funds and Legal Structures</a></li>
+                <li><a href="https://tactyqal.com/blog/what-are-the-different-roles-job-titles-in-venture-capital/#VC_scout" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">VC Scout Roles and Job Titles (Tactyqal)</a></li>
+                <li><a href="https://innovationscapital.in/venture-capitalists-a-complete-guide-to-understanding-venture-capital-firms-and-investors/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Venture Capitalists: A Complete Guide (Innovations Capital)</a></li>
+            </ul>
+    
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Operating Partner (Portfolio Support)</h4>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li><a href="https://growthequityinterviewguide.com/private-equity/private-equity-operations/operating-partner" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Operating Partner in Private Equity Operations</a></li>
+                <li><a href="https://superscout.co/guide/operating-partner" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Guide: The Operating Partner Role (SuperScout)</a></li>
+            </ul>
+    
+            <h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">Venture Partner (Part-Time Deal Lead/Advisor)</h4>
+            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+                <li><a href="https://www.pitchdrive.com/glossary/venture-partner" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Glossary: Venture Partner (PitchDrive)</a></li>
+                <li><a href="https://visible.vc/blog/venture-partner/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">Venture Partner Role Breakdown (Visible VC)</a></li>
+                <li><a href="https://avc.com/2010/08/what-is-a-venture-partner-and-does-it-matter-to-you/" target="_blank" rel="noopener noreferrer" style="color:#FFD700; text-decoration: underline;">What is a Venture Partner? (AVC)</a></li>
             </ul>
         ` 
     },
