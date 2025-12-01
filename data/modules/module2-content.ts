@@ -344,108 +344,147 @@ export const module2Content: ModuleDetail[] = [
                 <li>eBrevia / LawGeex: AI-powered contract analysis tools used to rapidly review vast volumes of legal documents, extracting key terms and risks to speed up the process.</li>
                 <li>Captable.io: Used to securely analyze the startup’s capitalization table (ownership structure) to understand dilution, valuation, and exit scenarios.</li>
             </ul>
+
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Due Diligence in Venture Capital</h2>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Executive Summary</h3>
+<p>Due diligence is a cornerstone of the venture capital process. In a high-risk environment where about 90% of startups fail, rigorous evaluation of a company's fundamentals is essential. This report outlines the purpose of VC due diligence and details the major areas to investigate: the founding team, market, product & technology, financials, legal/compliance, customer traction, and competitive moat. For each category, we identify key metrics and KPIs. Finally, we provide a practical checklist that junior analysts can use to structure real-world VC evaluations.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Introduction to VC Due Diligence</h3>
+<p>In venture capital, due diligence is a comprehensive investigation conducted by investors to validate the claims made by startup founders and assess potential risks before making an investment. It involves a thorough review of all aspects of the business—including market opportunity, founding team, product strategy, financial projections, legal status, and competitive positioning. This vetting process helps ensure that funds are committed only to ventures with credible plans and strong fundamentals. Allvue Systems notes that in such a high-stakes environment, due diligence becomes “an extremely important tool” for identifying which startups are likely to succeed.</p>
+<p>Due diligence typically follows an initial screening of the pitch. Early-stage diligence might focus on a quick “gut-check” of the team and basic market assumptions, whereas later-stage diligence involves a detailed, multi-week analysis once preliminary interest is established. The findings are compiled into a due diligence report or memorandum that informs the investment committee’s decision. Through this process, VCs aim to identify any red flags and confirm that the startup aligns with the firm’s investment thesis and risk appetite.</p>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">1. Founder/Team Due Diligence</h2>
+<p>A startup's founding and management team is often cited as the single most important factor in a VC's investment decision. Investors evaluate the track record, experience, and complementary skills of the founders and key executives. Key questions include: Do the founders have relevant domain expertise or prior entrepreneurial success (e.g., past exits)? Have they worked together before, and do their skills (technical, sales, operations, etc.) cover all the needs of a growing business? Analysts may conduct in-depth reference checks and observe team dynamics to assess cohesion and decision-making style. A resilient, adaptable founding team often inspires confidence even if other data are sparse.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Key metrics and qualitative factors in confidence diligence include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Background and track record: Years of relevant experience; number of previous startups founded; outcomes of past ventures (e.g., successful exits).</li>
+    <li>Education and credentials: Advanced degrees or certifications relevant to the business domain; notable awards or industry recognition.</li>
+    <li>Team composition: Founders’ ages and tenure; equity split and vesting schedules; balance of technical, product, and business leadership roles.</li>
+    <li>Complementarity and cohesion: Prior collaboration among team members; alignment of decision-making and conflict-resolution styles. A cohesive team with complementary skills is more likely to navigate challenges effectively.</li>
+    <li>Founder commitment: Founders’ personal investment (time and/or capital); willingness to pivot or persevere; clarity and consistency of vision over time.</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">2. Market Due Diligence</h2>
+<p>Market due diligence assesses whether the startup is addressing a large, growing opportunity that the business can feasibly capture. Analysts estimate the **total addressable market (TAM)** and **serviceable market (SAM)** to check if the opportunity is large enough for a venture-scale outcome. They usually involve multiple methods (top-down industry reports, bottom-up customer forecasts, and value-based models) to triangulate the market size. The analysis should also examine prevailing **market trends and dynamics** (emerging technologies, consumer behavior shifts, regulatory changes) and determine if the market is nascent, growing, or saturated.</p>
+<p>Competitive analysis is integral to market diligence. VCs map the **competitive landscape** by identifying direct and indirect competitors, their market shares, and key differentiators. Analysts seek whether the startup has a sustainable advantage (a "moat") in that market—for example, proprietary technology, network effects, a strong brand, or exclusive partnerships. Understanding competitors' strengths and weaknesses helps gauge whether the startup's offering can stand out and maintain share over time.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Key market metrics and KPIs include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Market Size and Growth: TAM (in USD or customers), SAM, and forecasted growth rate (CAGR) for the target segment.</li>
+    <li>Customer Segments: Number and value of target customers; willingness-to-pay and price sensitivity of these segments.</li>
+    <li>Adoption Drivers: Industry or technology adoption curves (e.g. smartphone penetration); relevant sector growth rates.</li>
+    <li>Regulatory/Barriers: Impact of regulations, patents, or technical barriers on market entry; intensity of competition.</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">3. Product & Technology Due Diligence</h2>
+<p>Product/technology due diligence examines the startup’s offering, its technical underpinnings, and roadmap for future development. Investors evaluate whether the product truly solves the target problem and whether the underlying technology is sound, scalable, and defensible. Key questions include: Is the product fully developed or still a prototype? Has it been validated by real users? Does the technology architecture follow best practices (e.g. modern cloud infrastructure, security standards) and is it well documented? Analysts may engage third-party experts to audit the codebase and infrastructure to uncover any hidden technical debt or bottlenecks.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Key product/tech metrics and points include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Product Maturity: Development stage (proof-of-concept, beta, Minimum Viable Product, or production) and user satisfaction or net promoter scores.</li>
+    <li>Technical Architecture: Quality of the codebase (version control usage, known bugs); scalability and reliability of the platform; reliance on third-party components or legacy technology.</li>
+    <li>Scalability & Performance: System benchmarks (e.g. maximum users supported); uptime and latency statistics; cloud infrastructure readiness.</li>
+    <li>Intellectual Property: Number of patents filed or granted; completeness of IP assignments from founders and contractors to the company.</li>
+    <li>Innovation: Degree of differentiation (unique features, proprietary algorithms) versus commoditized alternatives.</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">4. Financial Due Diligence</h2>
+<p>Financial due diligence reviews the startup's historical and projected financials to assess health and viability. Investors scrutinize the income statements, balance sheets, cash flow statements, and financial model to verify revenue, expenses, and burn rate. This process uncovers any inconsistencies (for example, unrecorded liabilities or overly optimistic assumptions). Analysts typically stress-test the model under multiple scenarios (e.g. best-case vs. worst-case growth) to understand the range of possible outcomes.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Key financial metrics and KPIs include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Revenue Growth: Year-over-year or month-over-month percentage growth in revenue or bookings.</li>
+    <li>Burn Rate and Runway: Current monthly cash burn and cash runway (months remaining at current burn rate).</li>
+    <li>Gross Margin: Percentage of revenue remaining after direct costs; higher margins indicate more scalability.</li>
+    <li>Unit Economics: Customer Acquisition Cost (CAC) vs. Customer Lifetime Value (LTV); a healthy startup often targets an LTV/CAC ratio of 3:1 or higher.</li>
+    <li>Recurring Revenue: For subscription models, Monthly Recurring Revenue (MRR) or Annual Recurring Revenue (ARR) growth.</li>
+    <li>Churn and Retention: Customer churn rate; net revenue retention (existing customers' spending growth).</li>
+    <li>Profitability Indicators: EBITDA or net income (even if negative) and projected timeline to profitability.</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">5. Legal & Compliance Due Diligence</h2>
+<p>Legal due diligence checks that the company is legally sound and has no hidden liabilities. VCs review corporate documents (certificates of incorporation, bylaws, board minutes) and the cap table to verify that ownership is clear and properly authorized. They ensure that all founders, employees, and contractors have signed agreements assigning IP and code to the company. Key contracts (customer agreements, supplier contracts, leases, employment agreements) are examined for any unusual terms or change-of-control provisions. Analysts also confirm compliance with relevant laws and regulations (for example, data privacy rules like GDPR) and investigate any pending litigation or regulatory issues.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Important legal checkpoints include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Corporate Structure: Verified cap table with all issuances and vesting schedules; clarity on any special share classes or investor rights.</li>
+    <li>Intellectual Property: Confirmation that all IP (software, patents, trademarks) is owned by the company; validity and scope of any patents.</li>
+    <li>Contracts: Review of major contracts for risks (e.g. exclusivity, termination clauses).</li>
+    <li>Regulatory Compliance: Adherence to industry-specific regulations; necessary licenses or approvals are in place.</li>
+    <li>Litigation or Disputes: Disclosure of any pending or past litigation; assessment of potential financial impact.</li>
+</ul>
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Customer & Traction Due Diligence</h2>
+<p>Customer/traction diligence focuses on evidence that the company has found product-market fit and is gaining real users or revenue. VCs analyze customer metrics and behavior to confirm that the product addresses a real need. This often includes interviewing a sample of existing customers to gauge satisfaction and how they use the product. Key signs of traction include sustained revenue growth, increasing active users, and customer advocacy (e.g. high Net Promoter Score).</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Key traction metrics and KPIs include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Customer Growth: Number of active users or customers; growth rate over recent months.</li>
+    <li>Revenue Traction: MRR or ARR and its growth rate.</li>
+    <li>Retention/Churn: Customer retention rate; churn rate; cohort retention curves to see if users stick over time.</li>
+    <li>Engagement: Usage metrics (daily/monthly active users, session length, feature adoption).</li>
+    <li>Customer Satisfaction: Net Promoter Score (NPS) or qualitative feedback surveys.</li>
+    <li>Sales Pipeline: Lead conversion rates; Customer Acquisition Cost (CAC) and payback period; customer concentration (risks if a few customers dominate revenue).</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Competitive/Moat Due Diligence</h2>
+<p>Competitive due diligence evaluates the startup’s position relative to rivals and the sustainability of any competitive advantage ("moat"). Analysts list direct and indirect competitors and compare product features, pricing, and go-to-market strategies. They assess each competitor's market share and potential to outflank the startup. A durable moat might come from proprietary technology or patents, strong network effects (more users increase value), a dominant brand, or exclusive partnerships that are hard to replicate.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Important competitive factors and metrics include:</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Market Share and Position: Estimated market share of the startup versus competitors; niche segment penetration.</li>
+    <li>Number of Competitors: List of direct and indirect competitors; market concentration or fragmentation.</li>
+    <li>Moat Attributes: Evidence of network effects (user base growth), proprietary tech (patents, trade secrets), brand loyalty, or exclusive deals.</li>
+    <li>Barriers to Entry: Capital requirements, regulatory hurdles, or specialized knowledge that deter new entrants.</li>
+    <li>Differentiators: Unique selling propositions (features, pricing, partnerships) that set the startup apart.</li>
+</ul>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Practical Due Diligence Template (Checklist)</h2>
+<p>New VC analysts can benefit from a structured checklist when conducting diligence. Below is a template outline that can be adapted for most startup evaluations. Analysts should tailor each item to the company's context and stage of financing.</p>
+
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Founder/Team: Verify founders' backgrounds, track records, and references. Check the composition of the management team and any board or advisors. Confirm that equity is properly allocated (e.g. vesting schedules).</li>
+    <li>Market: Estimate the startup's TAM and SAM and forecast growth rates. Identify customer segments and key market trends. Map the competitive landscape and regulatory context. Validate market need via customer interviews or expert research.</li>
+    <li>Product & Technology: Examine the product roadmap and current development stage. Review technical architecture (codebase, scalability) via documentation or experts. Assess the IP portfolio (patents, trademarks) and freedom-to-operate. Gather any user feedback or beta test results.</li>
+    <li>Financial: Review financial statements (profit & loss, balance sheet, cash flow). Analyze burn rate, cash runway, and historical revenues/expenses. Stress-test the financial model under different scenarios. Check unit economics (CAC vs. LTV) and margin trends.</li>
+    <li>Legal & Compliance: Audit corporate documents, board minutes, and the cap table for accuracy. Verify IP assignments and ownership of code/assets. Scrutinize major contracts (customers, suppliers, leases) for unfavorable terms. Ensure no undisclosed litigation or regulatory issues.</li>
+    <li>Customers & Traction: Inventory current customers and contracts (including renewal dates). Verify revenue recognition against contracts. Analyze user growth metrics (users, MRR/ARR) and retention curves. Interview a sample of customers for satisfaction and use cases.</li>
+    <li>Competition & Moat: Identify all relevant competitors and compare product offerings. Note any patents or proprietary tech that provide an edge. Assess network effects, brand strength, or other moat factors. Evaluate customer switching costs and barriers to entry.</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Conclusion</h3>
+<p>Thorough due diligence is vital for venture capital success. By systematically examining the team, market, product, finances, legal issues, customers, and competitive landscape, analysts uncover both opportunities and risks. Well-executed diligence informs valuation, deal terms, and post-investment strategy, ultimately increasing the probability of backing a sustainable, high-growth company. In a high-risk environment where most startups fail, a structured diligence process helps VCs make informed bets and maximize returns. This checklist aligns with industry best practices, which emphasize reviewing people (team), product, market, financials, legal, and competition. Analysts should adjust the depth of each section based on the company's maturity and the investment's risk profile.</p>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Assignment Link</h3>
+        <p>Find the problem statement for the assignment here:</p>
+        <p style="margin-top: 1rem;">
+            <a 
+                href="https://drive.google.com/file/d/1qYizWOJ02DKDYAFDlzAfA1Rcg7W2LFnR/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color:#FFD700; text-decoration: underline;"
+            >
+                View Assignment Problem Statement
+            </a>
+        </p>
         `,
     },
-    {
-        day: "Day 6",
-        content: "Data Sourcing, Pipeline Building & Networking",
-        detail: `
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 1: Sourcing Data & Tools for Sourcing</h2>
-            
-            <p>Venture Capitalists constantly look for promising founders and startups. Data sourcing involves collecting and analyzing information to spot early signals of growth, fundraising, or innovation, moving beyond just 'gut feeling'.</p>
-
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The VC’s Market Intelligence Toolkit</h3>
-            
-            <p>These tools are essential for Deal Sourcing, Screening, and Market Intelligence:</p>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>PitchBook: Provides extensive data on private equity, VC, M&A, valuations, and cap table data. Essential for market mapping and financial analysis.</li>
-                <li>CB Insights: Uses machine learning (Mosaic Score) to track startups, VCs, and emerging technology trends, predicting the health and growth potential of private companies.</li>
-                <li>Crunchbase Pro: Offers advanced search filters to monitor funding activity and gain personalized insights into the startup ecosystem.</li>
-                <li>Mattermark: Provides quantifiable metrics based on web, mobile, and social data to measure a private company's growth rate.</li>
-            </ul>
-
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Tools for Legal/Compliance and Reporting</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Ironclad: Automates the creation, negotiation, and execution of legal agreements (NDAs, term sheets) for fast, compliant deal execution.</li>
-                <li>Tableau / Microsoft Power BI / Looker Studio: Business Intelligence (BI) tools used by VCs to analyze portfolio performance metrics (KPIs) and create interactive reports for Limited Partners (LPs) and internal stakeholders.</li>
-            </ul>
-
-            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 2: Pipeline Building & Lead Tracking</h2>
-            
-            <p>A deal pipeline is the roadmap for an investment opportunity, tracking it from discovery until funds are wired. It turns the chaotic process of dealmaking into a structured, trackable process, crucial for prioritization and forecasting.</p>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The 7 Essential Stages of a VC Deal Pipeline</h3>
-            <ol style="list-style-type: decimal; margin-left: 2rem; padding-left: 0;">
-                <li>Deal Origination (Sourcing): VCs actively search for opportunities that align with their thesis (e.g., leveraging networks, conferences).</li>
-                <li>Deal Qualification (Screening): A quick check to screen out companies that don't meet basic criteria (Milestone: Qualified Lead).</li>
-                <li>Schedule a Pitch Meeting: Founder presents their vision and preparedness (Milestone: Deeper research warranted).</li>
-                <li>Deliver a Term Sheet: The firm's first official, non-binding commitment outlining preliminary terms (Milestone: Term sheet signed).</li>
-                <li>Due Diligence and Negotiation: The deepest dive—verifying financials, legal standing, and technology (Milestone: Legal documentation finalized).</li>
-                <li>Close the Deal: Execution of definitive legal agreements and transfer of funds (Milestone: Closed-Won/Closed-Lost).</li>
-                <li>Portfolio Company Onboarding & Support: Transitioning from investor to partner, providing strategic support and network connections.</li>
-            </ol>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Pipeline Management: The Engine</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Automate with CRM Software: Modern CRMs (e.g., Affinity, Zoho CRM, Pipedrive) are central databases that capture interactions and track deal progress. Pipedrive is known for its visual (Kanban) pipeline.</li>
-                <li>Crunch the Numbers: VCs use conversion rates to work backward (e.g., if you need 5 closed deals and the rate is 20%, you need 25 qualified leads).</li>
-                <li>Keep Deals on Track: Centralization of communication, diligent follow-up, and leveraging internal referrals are key to maintaining momentum. A deal that stalls often dies.</li>
-            </ul>
-
-            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-            
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 3: Networking is Currency: The Power of Connections in the VC World</h2>
-            
-            <p>VC is a people-first industry where the quality of your connections often outweighs the perfection of your pitch deck. Trust is the non-negotiable pillar of any long-term, high-risk investment.</p>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Foundation: Why VC is a Relationship Game</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>The Trust Pillar: Approximately 70% of all VC deals originate from established networks.</li>
-                <li>The Power of Affinity: Sharing an alma mater or professional background can increase your chance of investment by building immediate trust.</li>
-            </ul>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Gold Standard: Warm Introductions</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>13x Higher Success: A warm introduction (where a reputable mutual contact vouches for you) leads to a 13 times higher chance of funding success compared to a cold email.</li>
-                <li>Deal Flow Source: Almost 60% of all deals are sourced through personal referrals (former colleagues, other investors, portfolio founders).</li>
-            </ul>
-
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Network Effect: Exclusive Access and Validation</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Exclusive Access: Many high-potential startups rely entirely on referral networks, excluding investors who are not part of the 'right private conversations'.</li>
-                <li>Validation Amplification: An introduction from a trusted source (e.g., a top accelerator or another VC) serves as powerful external validation, instantly reducing perceived risk and accelerating the deal.</li>
-            </ul>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Architecture of Informal Networks</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-                <thead style="background-color: #553b1b;">
-                    <tr>
-                        <th style="padding: 12px; text-align: left; color: #fff;">Network Type</th>
-                        <th style="padding: 12px; text-align: left; color: #fff;">Key Function</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Professional Networks</td>
-                        <td style="padding: 12px;">Most reliable source of introduction due to proven professional credibility.</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Investor Networks</td>
-                        <td style="padding: 12px;">Facilitates syndication (co-investing) and cross-referrals for larger or specialized deals.</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Portfolio Company Networks</td>
-                        <td style="padding: 12px;">Provides referrals that are highly aligned with the VC's specific investment criteria.</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 12px;">Ecosystem Connectors</td>
-                        <td style="padding: 12px;">Lawyers, accountants, and accelerators—provide high-conversion referrals due to their access and credibility.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="margin-top: 1rem;">Success is Network-Driven: Long-term trust is the ultimate asset, enabling investors to act decisively when a great opportunity arises.</p>
-        `,
-    },
+    
 ];

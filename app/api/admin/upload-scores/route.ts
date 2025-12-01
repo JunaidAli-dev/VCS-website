@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     .map((r) => ({
       user_email: r.email,
       week: Number(r.week),
-      score: r.score === null || r.score === "" ? null : Number(r.score),
+      score: !r.score || String(r.score).trim() === "" ? null : Number(r.score),
     }));
 
   if (payload.length === 0) {

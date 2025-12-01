@@ -79,15 +79,17 @@ export default async function Page() {
         <div className="space-y-4">
           {weeks.map((w: any) => {
             const score = scoresMap[w.week];
+            const isModuleTwo = w.week === 2; // Identify Module 2
 
+            // Base checks for the standard assignment/quiz button
             const hasLink = !!w.submission_link;
-            const isModuleOne = w.week === 1;
+            const isModuleOneOrThreeOrFive = [1, 3, 5].includes(w.week);
 
-            const buttonLabel = [1, 3, 5].includes(w.week)
+            const buttonLabel = isModuleOneOrThreeOrFive
               ? "Attempt Quiz"
               : "Submit Assignment";
 
-            const disabled = !hasLink || (!isModuleOne && !hasLink);
+            const disabled = !hasLink;
 
             const buttonClasses = `inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border ${hasLink
                 ? "bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200"
@@ -115,67 +117,95 @@ export default async function Page() {
                         {w.title}
                       </h2>
                       <div className="flex items-center gap-4 flex-wrap">
-                        {/* Action button + Coming Soon */}
-                        <div className="inline-flex items-center gap-3">
-                          {hasLink && !disabled ? (
-                            <a
-                              href={w.submission_link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={buttonClasses}
-                            >
-                              <span>{buttonLabel}</span>
-                              <svg
-                                className="w-4 h-4"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </a>
-                          ) : (
-                            <button disabled className={buttonClasses}>
-                              <span>{buttonLabel}</span>
-                              <svg
-                                className="w-4 h-4"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </button>
-                          )}
 
-                          {/* Coming Soon Badge: hidden for module 1, shown when no link for others */}
-                          {!isModuleOne && !hasLink && (
-                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
-                              <svg
-                                className="w-3 h-3"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
+                        {/* 🚀 START: Custom Logic for Module 2 */}
+                        {isModuleTwo ? (
+                          <a
+                            href="https://drive.google.com/file/d/1qYizWOJ02DKDYAFDlzAfA1Rcg7W2LFnR/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-orange-500/10 text-orange-400 border border-orange-500/20 hover:bg-orange-500/20 hover:border-orange-500/40 transition-all duration-200"
+                          >
+                            <span>Problem Statement</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </a>
+                        ) : (
+                          /* * 🚀 END: Custom Logic for Module 2 
+                           * START: Standard Logic for all other Modules (1, 3, 4, 5...) 
+                           */
+                          <div className="inline-flex items-center gap-3">
+                            {hasLink ? (
+                              <a
+                                href={w.submission_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={buttonClasses}
                               >
-                                <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                                  clipRule="evenodd"
-                                />
-                              </svg>
-                              Coming Soon
-                            </span>
-                          )}
-                        </div>
+                                <span>{buttonLabel}</span>
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9 5l7 7-7 7"
+                                  />
+                                </svg>
+                              </a>
+                            ) : (
+                              <button disabled className={buttonClasses}>
+                                <span>{buttonLabel}</span>
+                                <svg
+                                  className="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9 5l7 7-7 7"
+                                  />
+                                </svg>
+                              </button>
+                            )}
+
+                            {/* Coming Soon Badge: shown only when link is missing and it's not a quiz module */}
+                            {!hasLink && !isModuleOneOrThreeOrFive && (
+                              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
+                                <svg
+                                  className="w-3 h-3"
+                                  fill="currentColor"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                                Coming Soon
+                              </span>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
