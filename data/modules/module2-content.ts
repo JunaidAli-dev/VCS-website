@@ -470,20 +470,6 @@ export const module2Content: ModuleDetail[] = [
 <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Conclusion</h3>
 <p>Thorough due diligence is vital for venture capital success. By systematically examining the team, market, product, finances, legal issues, customers, and competitive landscape, analysts uncover both opportunities and risks. Well-executed diligence informs valuation, deal terms, and post-investment strategy, ultimately increasing the probability of backing a sustainable, high-growth company. In a high-risk environment where most startups fail, a structured diligence process helps VCs make informed bets and maximize returns. This checklist aligns with industry best practices, which emphasize reviewing people (team), product, market, financials, legal, and competition. Analysts should adjust the depth of each section based on the company's maturity and the investment's risk profile.</p>
 
-<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-
-        <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Assignment Link</h3>
-        <p>Find the problem statement for the assignment here:</p>
-        <p style="margin-top: 1rem;">
-            <a 
-                href="https://drive.google.com/file/d/1qYizWOJ02DKDYAFDlzAfA1Rcg7W2LFnR/view?usp=sharing" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                style="color:#FFD700; text-decoration: underline;"
-            >
-                View Assignment Problem Statement
-            </a>
-        </p>
         `,
     },
     
