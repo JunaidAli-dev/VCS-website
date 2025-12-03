@@ -77,6 +77,22 @@ export const module3Content: ModuleDetail[] = [
     <li>Future round scenarios</li>
 </ul>
 <p style="margin-top: 1rem;">Over-dilution = kills founder motivation. Under-modeling = investor confusion.</p>
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Integrated Reading List </h2>
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Deal Types & Term Sheets</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Venture Deals by Brad Feld & Jason Mendelson</li>
+    <li>YC SAFE templates & guides</li>
+    <li>Cooley GO: Term Sheet resources</li>
+    <li>Carta: SAFE vs Notes guides</li>
+    <li>Startup India term sheet template</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Valuation</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Investopedia: Pre-money vs Post-money</li>
+</ul>
+
+
                `,
     },
     {
@@ -177,21 +193,8 @@ export const module3Content: ModuleDetail[] = [
 
 <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
 
-<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Integrated Reading List (Day 6 & Day 7)</h2>
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Integrated Reading List </h2>
 
-<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Deal Types & Term Sheets</h3>
-<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-    <li>Venture Deals by Brad Feld & Jason Mendelson</li>
-    <li>YC SAFE templates & guides</li>
-    <li>Cooley GO: Term Sheet resources</li>
-    <li>Carta: SAFE vs Notes guides</li>
-    <li>Startup India term sheet template</li>
-</ul>
-
-<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Valuation</h3>
-<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-    <li>Investopedia: Pre-money vs Post-money</li>
-</ul>
 
 <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Risk, Power-Law & Portfolio Strategy</h3>
 <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
