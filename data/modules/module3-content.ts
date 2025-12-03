@@ -3,104 +3,204 @@ import { ModuleDetail } from "@/data/course-data";
 export const module3Content: ModuleDetail[] = [
     {
         day: "Day 6",
-        content: "Data Sourcing, Pipeline Building & Networking",
+        content: "Deal Types, Investment Process & Valuation",
         detail: `
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 1: Sourcing Data & Tools for Sourcing</h2>
-            
-            <p>Venture Capitalists constantly look for promising founders and startups. Data sourcing involves collecting and analyzing information to spot early signals of growth, fundraising, or innovation, moving beyond just 'gut feeling'.</p>
+        
 
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The VC’s Market Intelligence Toolkit</h3>
-            
-            <p>These tools are essential for Deal Sourcing, Screening, and Market Intelligence:</p>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>PitchBook: Provides extensive data on private equity, VC, M&A, valuations, and cap table data. Essential for market mapping and financial analysis.</li>
-                <li>CB Insights: Uses machine learning (Mosaic Score) to track startups, VCs, and emerging technology trends, predicting the health and growth potential of private companies.</li>
-                <li>Crunchbase Pro: Offers advanced search filters to monitor funding activity and gain personalized insights into the startup ecosystem.</li>
-                <li>Mattermark: Provides quantifiable metrics based on web, mobile, and social data to measure a private company's growth rate.</li>
-            </ul>
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">1. Deal Types</h3>
+<p>Startups raise capital using two broad categories of instruments:</p>
 
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Tools for Legal/Compliance and Reporting</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Ironclad: Automates the creation, negotiation, and execution of legal agreements (NDAs, term sheets) for fast, compliant deal execution.</li>
-                <li>Tableau / Microsoft Power BI / Looker Studio: Business Intelligence (BI) tools used by VCs to analyze portfolio performance metrics (KPIs) and create interactive reports for Limited Partners (LPs) and internal stakeholders.</li>
-            </ul>
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">1.1 Equity Financing (Preferred Equity)</h4>
+<p>Equity = selling ownership in exchange for capital. VCs primarily purchase preferred stock, which includes rights such as:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Liquidation preference</li>
+    <li>Anti-dilution protection</li>
+    <li>Voting/board rights</li>
+    <li>Founder vesting/lock-ins</li>
+</ul>
+<p style="margin-top: 1rem;">Ownership formula: Investor % = Investment / Post-money valuation</p>
+<p style="margin-top: 1rem;">Example: Pre-money = INR 40 Cr, Investment = INR 10 Cr, Post-money = INR 50 Cr → Investor gets 20%. Equity = long-term capital + strategic support; downside → permanent dilution & lengthy negotiation.</p>
 
-            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">1.2 Convertible Notes</h4>
+<p>A debt instrument that later converts to equity, usually at better terms than priced-round investors. Key components:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Principal amount</li>
+    <li>Interest</li>
+    <li>Maturity date</li>
+    <li>Discount</li>
+    <li>Valuation cap</li>
+</ul>
+<p style="margin-top: 1rem;">Benefits: Fast, cheap, delays valuation discussion.</p>
+<p style="margin-top: 1rem;">Example: INR 1 Cr note, Cap = 25 Cr, Next round pre-money = 40 Cr. Ownership = 1 / 25 = 4% (vs 2% without protections).</p>
 
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 2: Pipeline Building & Lead Tracking</h2>
-            
-            <p>A deal pipeline is the roadmap for an investment opportunity, tracking it from discovery until funds are wired. It turns the chaotic process of dealmaking into a structured, trackable process, crucial for prioritization and forecasting.</p>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The 7 Essential Stages of a VC Deal Pipeline</h3>
-            <ol style="list-style-type: decimal; margin-left: 2rem; padding-left: 0;">
-                <li>Deal Origination (Sourcing): VCs actively search for opportunities that align with their thesis (e.g., leveraging networks, conferences).</li>
-                <li>Deal Qualification (Screening): A quick check to screen out companies that don't meet basic criteria (Milestone: Qualified Lead).</li>
-                <li>Schedule a Pitch Meeting: Founder presents their vision and preparedness (Milestone: Deeper research warranted).</li>
-                <li>Deliver a Term Sheet: The firm's first official, non-binding commitment outlining preliminary terms (Milestone: Term sheet signed).</li>
-                <li>Due Diligence and Negotiation: The deepest dive—verifying financials, legal standing, and technology (Milestone: Legal documentation finalized).</li>
-                <li>Close the Deal: Execution of definitive legal agreements and transfer of funds (Milestone: Closed-Won/Closed-Lost).</li>
-                <li>Portfolio Company Onboarding & Support: Transitioning from investor to partner, providing strategic support and network connections.</li>
-            </ol>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Pipeline Management: The Engine</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Automate with CRM Software: Modern CRMs (e.g., Affinity, Zoho CRM, Pipedrive) are central databases that capture interactions and track deal progress. Pipedrive is known for its visual (Kanban) pipeline.</li>
-                <li>Crunch the Numbers: VCs use conversion rates to work backward (e.g., if you need 5 closed deals and the rate is 20%, you need 25 qualified leads).</li>
-                <li>Keep Deals on Track: Centralization of communication, diligent follow-up, and leveraging internal referrals are key to maintaining momentum. A deal that stalls often dies.</li>
-            </ul>
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">1.3 SAFEs (Simple Agreement for Future Equity)</h4>
+<p>Not debt — no interest, no maturity date. Convert into equity at the next priced round using:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Valuation cap</li>
+    <li>Discount</li>
+</ul>
+<p style="margin-top: 1rem;">Designed to keep early-stage deals simple and founder-friendly.</p>
+<p style="margin-top: 1rem;">Example: SAFE of INR 50L at a 20 Cr cap → converts into 2.5% instead of 1.25% if valued at 40 Cr.</p>
 
-            <hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
-            
-            <h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Part 3: Networking is Currency: The Power of Connections in the VC World</h2>
-            
-            <p>VC is a people-first industry where the quality of your connections often outweighs the perfection of your pitch deck. Trust is the non-negotiable pillar of any long-term, high-risk investment.</p>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Foundation: Why VC is a Relationship Game</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>The Trust Pillar: Approximately 70% of all VC deals originate from established networks.</li>
-                <li>The Power of Affinity: Sharing an alma mater or professional background can increase your chance of investment by building immediate trust.</li>
-            </ul>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Gold Standard: Warm Introductions</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>13x Higher Success: A warm introduction (where a reputable mutual contact vouches for you) leads to a 13 times higher chance of funding success compared to a cold email.</li>
-                <li>Deal Flow Source: Almost 60% of all deals are sourced through personal referrals (former colleagues, other investors, portfolio founders).</li>
-            </ul>
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">1.4 Term Sheets</h4>
+<p>A term sheet is a non-binding deal blueprint. Covers:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Valuation & security type</li>
+    <li>Liquidation preferences</li>
+    <li>Anti-dilution</li>
+    <li>ESOP pool</li>
+    <li>Voting/board rights</li>
+    <li>Information rights</li>
+    <li>Founder vesting, lock-ins</li>
+</ul>
+<p style="margin-top: 1rem;">It sets expectations and prevents downstream conflict.</p>
 
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Network Effect: Exclusive Access and Validation</h3>
-            <ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
-                <li>Exclusive Access: Many high-potential startups rely entirely on referral networks, excluding investors who are not part of the 'right private conversations'.</li>
-                <li>Validation Amplification: An introduction from a trusted source (e.g., a top accelerator or another VC) serves as powerful external validation, instantly reducing perceived risk and accelerating the deal.</li>
-            </ul>
-            
-            <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">The Architecture of Informal Networks</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-                <thead style="background-color: #553b1b;">
-                    <tr>
-                        <th style="padding: 12px; text-align: left; color: #fff;">Network Type</th>
-                        <th style="padding: 12px; text-align: left; color: #fff;">Key Function</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Professional Networks</td>
-                        <td style="padding: 12px;">Most reliable source of introduction due to proven professional credibility.</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Investor Networks</td>
-                        <td style="padding: 12px;">Facilitates syndication (co-investing) and cross-referrals for larger or specialized deals.</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #333;">
-                        <td style="padding: 12px;">Portfolio Company Networks</td>
-                        <td style="padding: 12px;">Provides referrals that are highly aligned with the VC's specific investment criteria.</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 12px;">Ecosystem Connectors</td>
-                        <td style="padding: 12px;">Lawyers, accountants, and accelerators—provide high-conversion referrals due to their access and credibility.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="margin-top: 1rem;">Success is Network-Driven: Long-term trust is the ultimate asset, enabling investors to act decisively when a great opportunity arises.</p>
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">2. Introduction to Valuation (Pre-Money & Post-Money)</h2>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.1 Pre-Money Valuation</h4>
+<p>Company value before the investment. Depends on traction, revenue, TAM, team, IP, and benchmarks.</p>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.2 Post-Money Valuation</h4>
+<p>Post-money = Pre-money + Investment. Investor ownership is always based on post-money. Misinterpreting pre vs post in SAFEs/notes → unexpected dilution.</p>
+<p style="margin-top: 1rem;">Example: Pre-money = 30 Cr, Investment = 10 Cr, Post = 40 Cr → Investor owns 25%.</p>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">3. Cap Table & Dilution Modeling</h2>
+<p>Every round issues new shares → diluting existing holders. VCs model:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Equity dilution</li>
+    <li>ESOP expansion</li>
+    <li>SAFE/note conversion impacts</li>
+    <li>Future round scenarios</li>
+</ul>
+<p style="margin-top: 1rem;">Over-dilution = kills founder motivation. Under-modeling = investor confusion.</p>
+               `,
+    },
+    {
+        day: "Day 7",
+        content: "Portfolio Management & Risk Thinking",
+        detail:`
+        
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">1. Why Risk Thinking Matters</h3>
+<p>VC outcomes follow a power-law: A few winners return the majority of the fund. Most companies fail. Therefore:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Failure is expected.</li>
+    <li>Risk is allocated, not eliminated.</li>
+    <li>Follow-ons are where returns concentrate.</li>
+</ul>
+<p style="margin-top: 1rem;">Example: A 50x–100x winner can offset many write-offs.</p>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">2. Core Risk Management Principles</h3>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.1 Understand Power-Law Outcomes</h4>
+<p>VC isn't about “average” success. A tiny number of companies drive outsized returns. Your job: spot and double down on emerging winners.</p>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.2 Fund Construction Discipline</h4>
+<p>A structured plan for:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Number of investments</li>
+    <li>Initial check size</li>
+    <li>Ownership targets</li>
+    <li>Reserve ratio (commonly ≈60%)</li>
+</ul>
+<p style="margin-top: 1rem;">Example: INR 500 Cr fund, 25 companies × INR 8 Cr = 200 Cr initial deployment, 300 Cr reserved for follow-ons.</p>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.3 Staged Financing</h4>
+<p>Risk decreases → more capital deployed.</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Seed → evaluate team, prototype</li>
+    <li>Series A → retention, PMF (Product-Market Fit)</li>
+    <li>Series B+ → scaling, efficiency</li>
+</ul>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.4 Diversification Strategy</h4>
+<p>Spread risk across:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Sectors</li>
+    <li>Stages</li>
+    <li>Geographies</li>
+    <li>Business models</li>
+    <li>Market cycles</li>
+</ul>
+<p style="margin-top: 1rem;">Avoid over-diversification → reduces conviction & attention. Example portfolio:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>40% enterprise SaaS</li>
+    <li>30% consumer</li>
+    <li>20% deeptech</li>
+    <li>10% emerging bets</li>
+</ul>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.5 Syndication</h4>
+<p>Co-invest with other VCs to reduce risk, share diligence, and bring additional expertise.</p>
+
+<h4 style="font-size: 1.3rem; font-weight: 600; color: #fdbf68; margin-top: 1rem;">2.6 Pro-Rata Rights & Reserves</h4>
+<p>Pro-rata = right to maintain ownership in future rounds. Many funds allocate 50–60% for follow-ons. Skipping follow-ons causes major dilution in your winners.</p>
+<p>Follow-on categories:</p>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>A (Winners): Increase exposure</li>
+    <li>B (Stable): Selective support</li>
+    <li>C (Weak): No more capital</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">3. Portfolio Construction Framework</h3>
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead style="background-color: #553b1b;">
+        <tr>
+            <th style="padding: 12px; text-align: left; color: #fff;">Category</th>
+            <th style="padding: 12px; text-align: left; color: #fff;">% of portfolio</th>
+            <th style="padding: 12px; text-align: left; color: #fff;">Investment Behavior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #333;">
+            <td style="padding: 12px;">A — Winners</td>
+            <td style="padding: 12px;">10–20%</td>
+            <td style="padding: 12px;">Increase capital, defend ownership</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #333;">
+            <td style="padding: 12px;">B — Stable</td>
+            <td style="padding: 12px;">40–50%</td>
+            <td style="padding: 12px;">Moderate follow-on</td>
+        </tr>
+        <tr>
+            <td style="padding: 12px;">C — Underperformers</td>
+            <td style="padding: 12px;">30–40%</td>
+            <td style="padding: 12px;">Stop deploying, manage write-off risk</td>
+        </tr>
+    </tbody>
+</table>
+<p style="margin-top: 1rem;">This ensures capital flows toward upside, not losses.</p>
+
+<hr style="border-top: 1px solid #444; margin: 1.5rem 0;">
+
+<h2 style="font-size: 2.25rem; font-weight: 800; color: #fdbf68; border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin-top: 2.5rem;">Integrated Reading List (Day 6 & Day 7)</h2>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Deal Types & Term Sheets</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Venture Deals by Brad Feld & Jason Mendelson</li>
+    <li>YC SAFE templates & guides</li>
+    <li>Cooley GO: Term Sheet resources</li>
+    <li>Carta: SAFE vs Notes guides</li>
+    <li>Startup India term sheet template</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Valuation</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>Investopedia: Pre-money vs Post-money</li>
+</ul>
+
+<h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-top: 2rem;">Risk, Power-Law & Portfolio Strategy</h3>
+<ul style="list-style-type: disc; margin-left: 2rem; padding-left: 0;">
+    <li>VC Lab - Power Law in VC</li>
+    <li>a16z - Babe Ruth Effect</li>
+    <li>Cornell analysis - VC return distributions</li>
+    <li>Medium posts on diversification & allocation</li>
+    <li>GoingVC portfolio construction guide</li>
+</ul>
         `,
     },
 ];
