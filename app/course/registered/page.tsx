@@ -14,8 +14,8 @@ export default async function Page() {
     fetch(base + "/api/course/weeks", { cache: "no-store" }),
     fetch(
       base +
-      "/api/course/scores?email=" +
-      encodeURIComponent(session.user.email || ""),
+        "/api/course/scores?email=" +
+        encodeURIComponent(session.user.email || ""),
       { cache: "no-store" }
     ),
   ]);
@@ -62,6 +62,14 @@ export default async function Page() {
     );
   };
 
+  // 🎯 Custom quiz links
+  const MODULE_2_QUIZ = "https://forms.gle/sgyN5ZHgoWd4WK9K7";
+  const MODULE_3_QUIZ = "https://forms.gle/YsEkrcFPcTkyFHdB9";
+  const MODULE_4_QUIZ = "https://forms.gle/V6drcFaz8Sa1A456A";
+
+  const activeQuizClasses =
+    "inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200";
+
   return (
     <div className="min-h-screen p-6 md:p-10">
       <div className="max-w-6xl mx-auto">
@@ -79,9 +87,6 @@ export default async function Page() {
         <div className="space-y-4">
           {weeks.map((w: any) => {
             const score = scoresMap[w.week];
-            const isModuleTwo = w.week === 2; // Identify Module 2
-
-            // Base checks for the standard assignment/quiz button
             const hasLink = !!w.submission_link;
             const isModuleQuiz = [1, 3, 5].includes(w.week);
 
@@ -89,31 +94,79 @@ export default async function Page() {
               ? "Attempt Quiz"
               : "Submit Assignment";
 
-            const disabled = !hasLink;
-
-            const buttonClasses = `inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border ${hasLink
+            const buttonClasses = `inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border ${
+              hasLink
                 ? "bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200"
                 : "bg-slate-800/50 text-slate-500 border-slate-700/50 cursor-not-allowed opacity-60"
-              }`;
-            
-            // Custom styling for active quiz button (used for Modules 1, 3, 5)
-            const activeQuizClasses = "inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200";
+            }`;
 
-            // 🎯 Define specific quiz/problem statement links here
-            const MODULE_2_QUIZ_LINK = "https://forms.gle/sgyN5ZHgoWd4WK9K7"; 
-            const MODULE_3_QUIZ_LINK = "https://forms.gle/YsEkrcFPcTkyFHdB9"; 
-            
-            
-            let quizLink = w.submission_link;
-            if (w.week === 2) {
-                
-                quizLink = MODULE_2_QUIZ_LINK;
-            } else if (w.week === 3) {
-                
-                quizLink = MODULE_3_QUIZ_LINK;
-            } 
-            
+            // =============================
+            //  ⭐ CUSTOM CASE: MODULE 4 QUIZ
+            // =============================
+            if (w.week === 4) {
+              return (
+                <div
+                  key={w.week}
+                  className="group bg-slate-900/60 backdrop-blur-sm rounded-xl border border-slate-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300"
+                >
+                  <div className="flex items-center justify-between p-6 md:p-7 gap-6">
+                    <div className="flex items-center gap-5 flex-1 min-w-0">
+                      <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                        <span className="text-white font-bold text-lg">
+                          {w.week}
+                        </span>
+                      </div>
 
+                      <div className="flex-1 min-w-0">
+                        <h2 className="text-xl md:text-2xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
+                          {w.title}
+                        </h2>
+
+                        {/* ⭐ Only one button here */}
+                        <a
+                          href={MODULE_4_QUIZ}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={activeQuizClasses}
+                        >
+                          <span>Attempt Quiz</span>
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Score */}
+                    <div className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 rounded-lg bg-slate-800/60 border border-slate-700/50 min-w-[100px]">
+                      <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
+                        Score
+                      </div>
+                      {getScoreDisplay(score)}
+                      {score !== null && score !== undefined && (
+                        <div className="text-xs text-gray-500 mt-1">/ 10</div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            // =============================
+            //   NORMAL MODULE LOGIC
+            // =============================
+            const MODULE_2_OR_3 =
+              w.week === 2 ? MODULE_2_QUIZ : w.week === 3 ? MODULE_3_QUIZ : null;
 
             return (
               <div
@@ -121,49 +174,42 @@ export default async function Page() {
                 className="group bg-slate-900/60 backdrop-blur-sm rounded-xl border border-slate-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300"
               >
                 <div className="flex items-center justify-between p-6 md:p-7 gap-6">
-                  {/* Left: Module info */}
                   <div className="flex items-center gap-5 flex-1 min-w-0">
-                    {/* Module number */}
                     <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
                       <span className="text-white font-bold text-lg">
                         {w.week}
                       </span>
                     </div>
 
-                    {/* Title and links */}
                     <div className="flex-1 min-w-0">
                       <h2 className="text-xl md:text-2xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                         {w.title}
                       </h2>
-                      <div className="flex items-center gap-4 flex-wrap">
 
-                        {/* 🚀 START: Custom Logic for Module 2 and 3 Quizzes */}
-                        {(w.week === 2 || w.week === 3) ? (
-                            <a
-                              href={w.week === 3 ? MODULE_3_QUIZ_LINK : MODULE_2_QUIZ_LINK}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={activeQuizClasses}
+                      <div className="flex items-center gap-4 flex-wrap">
+                        {MODULE_2_OR_3 ? (
+                          <a
+                            href={MODULE_2_OR_3}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={activeQuizClasses}
+                          >
+                            <span>Attempt Quiz</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
                             >
-                              <span>Attempt Quiz</span>
-                              <svg
-                                className="w-4 h-4"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </a>
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </a>
                         ) : (
-                          /* * 🚀 END: Custom Logic for Modules 2 & 3
-                           * START: Standard Logic for all other Modules (1, 4, 5...) 
-                           */
                           <div className="inline-flex items-center gap-3">
                             {hasLink ? (
                               <a
@@ -206,7 +252,6 @@ export default async function Page() {
                               </button>
                             )}
 
-                            {/* Coming Soon Badge: shown only when link is missing and it's not a quiz module */}
                             {!hasLink && !isModuleQuiz && (
                               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
                                 <svg
@@ -229,7 +274,6 @@ export default async function Page() {
                     </div>
                   </div>
 
-                  {/* Right: Score */}
                   <div className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 rounded-lg bg-slate-800/60 border border-slate-700/50 min-w-[100px]">
                     <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
                       Score
