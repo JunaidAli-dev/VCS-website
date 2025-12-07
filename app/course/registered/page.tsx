@@ -101,7 +101,7 @@ export default async function Page() {
             }`;
 
             // =============================
-            //  ⭐ CUSTOM CASE: MODULE 4 QUIZ
+            //  ⭐ CUSTOM CASE: MODULE 4 QUIZ + NEW ASSIGNMENT BUTTON
             // =============================
             if (w.week === 4) {
               return (
@@ -122,7 +122,7 @@ export default async function Page() {
                           {w.title}
                         </h2>
 
-                        {/* ⭐ Only one button here */}
+                        {/* ⭐ Attempt Quiz */}
                         <a
                           href={MODULE_4_QUIZ}
                           target="_blank"
@@ -144,6 +144,31 @@ export default async function Page() {
                             />
                           </svg>
                         </a>
+
+                        
+                        <div className="mt-3">
+                          <a
+                            href="https://forms.gle/mZGY4G7JbYZEHxAg7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={activeQuizClasses}
+                          >
+                            <span>Submit Assignment</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
