@@ -62,10 +62,11 @@ export default async function Page() {
     );
   };
 
-  // 🎯 Custom quiz links
+  
   const MODULE_2_QUIZ = "https://forms.gle/sgyN5ZHgoWd4WK9K7";
   const MODULE_3_QUIZ = "https://forms.gle/YsEkrcFPcTkyFHdB9";
   const MODULE_4_QUIZ = "https://forms.gle/V6drcFaz8Sa1A456A";
+  const MODULE_5_QUIZ = "https://forms.gle/6tNzS4GG1Np5LsXGA";
 
   const activeQuizClasses =
     "inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border bg-blue-500/10 text-blue-400 border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/40 transition-all duration-200";
@@ -101,7 +102,7 @@ export default async function Page() {
             }`;
 
             // =============================
-            //  ⭐ CUSTOM CASE: MODULE 4 QUIZ + NEW ASSIGNMENT BUTTON
+            //   CUSTOM CASE: MODULE 4 QUIZ + NEW ASSIGNMENT BUTTON
             // =============================
             if (w.week === 4) {
               return (
@@ -122,7 +123,7 @@ export default async function Page() {
                           {w.title}
                         </h2>
 
-                        {/* ⭐ Attempt Quiz */}
+                        {/*  Attempt Quiz */}
                         <a
                           href={MODULE_4_QUIZ}
                           target="_blank"
@@ -145,7 +146,6 @@ export default async function Page() {
                           </svg>
                         </a>
 
-                        
                         <div className="mt-3">
                           <a
                             href="https://forms.gle/mZGY4G7JbYZEHxAg7"
@@ -193,6 +193,9 @@ export default async function Page() {
             const MODULE_2_OR_3 =
               w.week === 2 ? MODULE_2_QUIZ : w.week === 3 ? MODULE_3_QUIZ : null;
 
+            
+            const MODULE_5_OR_QUIZ = w.week === 5 ? MODULE_5_QUIZ : null;
+
             return (
               <div
                 key={w.week}
@@ -215,6 +218,29 @@ export default async function Page() {
                         {MODULE_2_OR_3 ? (
                           <a
                             href={MODULE_2_OR_3}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={activeQuizClasses}
+                          >
+                            <span>Attempt Quiz</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </a>
+                        ) : MODULE_5_OR_QUIZ ? (
+                          // ⭐ MODULE 5 BUTTON
+                          <a
+                            href={MODULE_5_OR_QUIZ}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={activeQuizClasses}
