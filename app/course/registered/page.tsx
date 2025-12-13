@@ -107,9 +107,6 @@ export default async function Page() {
                 : "bg-slate-800/50 text-slate-500 border-slate-700/50 cursor-not-allowed opacity-60"
             }`;
 
-            // =============================
-            //   CUSTOM CASE: MODULE 4 QUIZ + NEW ASSIGNMENT BUTTON
-            // =============================
             if (w.week === 4) {
               return (
                 <div
@@ -129,7 +126,6 @@ export default async function Page() {
                           {w.title}
                         </h2>
 
-                        {/*  Attempt Quiz */}
                         <a
                           href={MODULE_4_QUIZ}
                           target="_blank"
@@ -178,7 +174,6 @@ export default async function Page() {
                       </div>
                     </div>
 
-                    {/* Score */}
                     <div className="flex-shrink-0 flex flex-col items-center justify-center px-6 py-4 rounded-lg bg-slate-800/60 border border-slate-700/50 min-w-[100px]">
                       <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
                         Score
@@ -195,9 +190,6 @@ export default async function Page() {
               );
             }
 
-            // =============================
-            //   NORMAL MODULE LOGIC
-            // =============================
             const MODULE_2_OR_3 =
               w.week === 2 ? MODULE_2_QUIZ : w.week === 3 ? MODULE_3_QUIZ : null;
 
@@ -229,7 +221,11 @@ export default async function Page() {
                             rel="noopener noreferrer"
                             className={activeQuizClasses}
                           >
-                            <span>Attempt Quiz</span>
+                            <span>
+                              {w.week === 2
+                                ? "Submit Assignment"
+                                : "Attempt Quiz"}
+                            </span>
                             <svg
                               className="w-4 h-4"
                               fill="none"
@@ -245,7 +241,6 @@ export default async function Page() {
                             </svg>
                           </a>
                         ) : MODULE_5_OR_QUIZ ? (
-                          // ⭐ MODULE 5 BUTTON
                           <a
                             href={MODULE_5_OR_QUIZ}
                             target="_blank"
@@ -309,23 +304,6 @@ export default async function Page() {
                                 </svg>
                               </button>
                             )}
-
-                            {!hasLink && !isModuleQuiz && (
-                              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500/20 to-yellow-500/20 text-orange-400 border border-orange-500/30 animate-pulse">
-                                <svg
-                                  className="w-3 h-3"
-                                  fill="currentColor"
-                                  viewBox="0 0 20 20"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                                    clipRule="evenodd"
-                                  />
-                                </svg>
-                                Coming Soon
-                              </span>
-                            )}
                           </div>
                         )}
                       </div>
@@ -359,7 +337,28 @@ export default async function Page() {
               <h3 className="text-2xl font-semibold text-white mb-1">
                 Hackathon
               </h3>
-              <p className="text-gray-400">Final Assessment</p>
+              <p className="text-gray-400 mb-3">Final Assessment</p>
+              <a
+                href="https://forms.gle/FCPRTu7C9h7CgswE9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={activeQuizClasses}
+              >
+                <span>Submit Hackathon</span>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
