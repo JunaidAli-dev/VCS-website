@@ -62,6 +62,13 @@ export default async function Page() {
     );
   };
 
+  // helper: max score per week
+  const getMaxScoreForWeek = (week: number) => {
+    if ([2].includes(week)) return 100;
+    if ([1, 3, 4, 5].includes(week)) return 10;
+    return 10; // default, in case more weeks are added
+  };
+
   const MODULE_2_QUIZ = "https://forms.gle/sgyN5ZHgoWd4WK9K7";
   const MODULE_3_QUIZ = "https://forms.gle/YsEkrcFPcTkyFHdB9";
   const MODULE_4_QUIZ = "https://forms.gle/V6drcFaz8Sa1A456A";
@@ -173,7 +180,9 @@ export default async function Page() {
                       </div>
                       {getScoreDisplay(score)}
                       {score !== null && score !== undefined && (
-                        <div className="text-xs text-gray-500 mt-1">/ 10</div>
+                        <div className="text-xs text-gray-500 mt-1">
+                          / {getMaxScoreForWeek(w.week)}
+                        </div>
                       )}
                     </div>
                   </div>
@@ -307,7 +316,9 @@ export default async function Page() {
                     </div>
                     {getScoreDisplay(score)}
                     {score !== null && score !== undefined && (
-                      <div className="text-xs text-gray-500 mt-1">/ 10</div>
+                      <div className="text-xs text-gray-500 mt-1">
+                        / {getMaxScoreForWeek(w.week)}
+                      </div>
                     )}
                   </div>
                 </div>
