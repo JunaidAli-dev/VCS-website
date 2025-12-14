@@ -64,8 +64,8 @@ export default async function Page() {
 
   // helper: max score per week
   const getMaxScoreForWeek = (week: number) => {
-    if ([2].includes(week)) return 100;
-    if ([1, 3, 4, 5].includes(week)) return 10;
+    if ([2, 4].includes(week)) return 100;
+    if ([1, 3, 5].includes(week)) return 10;
     return 10; // default, in case more weeks are added
   };
 
