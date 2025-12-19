@@ -29,6 +29,22 @@ export default async function Page() {
     {}
   );
 
+  // FRONTEND-ONLY: duplicate week 4 into a quiz card with week=99
+  const uiWeeks = weeks.flatMap((w: any) => {
+    if (w.week === 4) {
+      return [
+        w,
+        {
+          ...w,
+          week: 99, // frontend sentinel for module 4 quiz
+          title: `${w.title} – Quiz`,
+          isModule4Quiz: true,
+        },
+      ];
+    }
+    return [w];
+  });
+
   const getScoreDisplay = (score: any) => {
     if (score === null || score === undefined) {
       return (
@@ -62,10 +78,10 @@ export default async function Page() {
     );
   };
 
-  // helper: max score per week
+  // helper: max score per week (99 = module 4 quiz)
   const getMaxScoreForWeek = (week: number) => {
     if ([2, 4].includes(week)) return 100;
-    if ([1, 3, 5].includes(week)) return 10;
+    if ([1, 3, 5, 99].includes(week)) return 10;
     return 10; // default, in case more weeks are added
   };
 
@@ -92,8 +108,9 @@ export default async function Page() {
 
         {/* Modules List */}
         <div className="space-y-4">
-          {weeks.map((w: any) => {
-            const score = scoresMap[w.week];
+          {uiWeeks.map((w: any) => {
+            // use 99 only in frontend for quiz score lookup
+            const score = scoresMap[w.isModule4Quiz ? 99 : w.week];
             const hasLink = !!w.submission_link;
             const isModuleQuiz = [1, 3, 5].includes(w.week);
 
@@ -107,7 +124,8 @@ export default async function Page() {
                 : "bg-slate-800/50 text-slate-500 border-slate-700/50 cursor-not-allowed opacity-60"
             }`;
 
-            if (w.week === 4) {
+            // Special UI for original week 4 (module + assignment + quiz link)
+            if (w.week === 4 && !w.isModule4Quiz) {
               return (
                 <div
                   key={w.week}
@@ -204,7 +222,7 @@ export default async function Page() {
                   <div className="flex items-center gap-5 flex-1 min-w-0">
                     <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
                       <span className="text-white font-bold text-lg">
-                        {w.week}
+                        {w.isModule4Quiz ? 4 : w.week}
                       </span>
                     </div>
 
@@ -214,7 +232,30 @@ export default async function Page() {
                       </h2>
 
                       <div className="flex items-center gap-4 flex-wrap">
-                        {MODULE_2_OR_3 ? (
+                        {w.isModule4Quiz ? (
+                          // frontend-only quiz card for module 4
+                          <a
+                            href={MODULE_4_QUIZ}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={activeQuizClasses}
+                          >
+                            <span>Module 4 Quiz</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </a>
+                        ) : MODULE_2_OR_3 ? (
                           <a
                             href={MODULE_2_OR_3}
                             target="_blank"
@@ -317,7 +358,7 @@ export default async function Page() {
                     {getScoreDisplay(score)}
                     {score !== null && score !== undefined && (
                       <div className="text-xs text-gray-500 mt-1">
-                        / {getMaxScoreForWeek(w.week)}
+                        / {getMaxScoreForWeek(w.isModule4Quiz ? 99 : w.week)}
                       </div>
                     )}
                   </div>
